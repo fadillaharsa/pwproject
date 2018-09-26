@@ -1,6 +1,11 @@
 # pwproject
 Repositori projek praktikum mata kuliah pemrograman web.
 
+Anggota Kelompok:
+1. Muhammad Fadillah Arsa 140810170005
+2. Johannes Lumbantoruan 140810170043
+3. Siradj Fauzi 140810170021
+
 PENJELASAN
 1. Nama Web: - (*sedang difikirkan)
 2. Penjelasan: Web perekrutan keanggotaan lembaga kemahasiswaan
