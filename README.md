@@ -8,8 +8,7 @@ Anggota
 2. Johannes Lumbantoruan 140810170043
 3. Muhammad Siradj Al Fauzi 140810170021
 
-Pembimbing
-
+Pembimbing:
 Baby Catleya 140810160048
 
 PENJELASAN
