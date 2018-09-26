@@ -2,11 +2,11 @@
 Repositori projek praktikum mata kuliah pemrograman web.
 
 KELOMPOK A5 PRAKTIKUM PEMROGRAMAN WEB
-Anggota:
+Anggota
 1. Muhammad Fadillah Arsa 140810170005
 2. Johannes Lumbantoruan 140810170043
 3. Muhammad Siradj Al Fauzi 140810170021
-Pembimbing:
+Pembimbing
 Baby Catleya 140810160048
 
 PENJELASAN
