@@ -1,13 +1,16 @@
 # pwproject
 Repositori projek praktikum mata kuliah pemrograman web.
 
-Anggota Kelompok:
+KELOMPOK A5 PRAKTIKUM PEMROGRAMAN WEB
+Anggota:
 1. Muhammad Fadillah Arsa 140810170005
 2. Johannes Lumbantoruan 140810170043
-3. Siradj Fauzi 140810170021
+3. Muhammad Siradj Al Fauzi 140810170021
+Pembimbing:
+Baby Catleya 140810160048
 
 PENJELASAN
-1. Nama Web: - (*sedang difikirkan)
+1. Nama Web: Reclema (Recruitment Lembaga Kemahasiswaan)
 2. Penjelasan: Web perekrutan keanggotaan lembaga kemahasiswaan
 
 FUNGSI
