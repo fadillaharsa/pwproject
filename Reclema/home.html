@@ -6,10 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<style>
-	.gambarhome{
-		width:auto;
-		height:auto;
-	}
+		.gambarhome{
+			width:auto;
+			height:auto;
+		}
+		.kepala{
+			text-align: right;
+			padding: 10px 5px 5px 5px;
+		}
+		
+		.bentuk{
+			align-content: space-around;
+		}	
 	</style>
 </head>
 <body>
@@ -20,8 +28,28 @@
 			<div class="col-sm-4">
 				<h1>RECLEMA</h1>
 			</div>
-			<div class="col-sm-8">.col-sm-8</div>
+			<div class="col-sm-8">
+				<p class="kepala">
+					Daftar&emsp;Masuk					
+				</p>
+			</div>
 		</div>
+		<div class="bentuk">
+			<form>
+				<input type="text" name="" placeholder="Masukkan sesuatu">
+				<select name="kategori">
+					<option value="Kepanitiaan">Kepanitiaan</option>
+					<option value="UKM">UKM</option>
+					<option value="BE">BE</option>					
+				</select>
+				<select name="lingkup">
+					<option value="Universitas">Universitas</option>
+					<option value="Fakultas">Fakultas</option>
+					<option value="Jurusan">Jurusan</option>					
+				</select>
+				<input type="button" value="Cari">
+			</form>
+		</div>		
 <!--MAIN-->
 		<div class="row">
 			<div class="col-sm-12">
