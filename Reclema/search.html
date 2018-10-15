@@ -7,9 +7,8 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<style>
 		.gambarhome{
-			width:auto;
+			width:100px;
 			height:auto;
-			border: 1px solid #fff;
 		}
 		.kepala{
 			text-align: right;
@@ -50,41 +49,45 @@
 				</select>
 				<input type="button" value="Cari">
 			</form>
-		</div>		
+		</div>
+
 <!--MAIN-->
 		<div class="row">
 			<div class="col-sm-12">
 				<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
-				<a href="#" style="text-align: right; float: right">Lihat Semua >>></a>
 			</div>
-			<div class="col-sm-3" style="background: #008080; color: white">
-				<form>
-					Lingkup:<br>
-					<input type="checkbox" value="Universitas" placeholder="Universitas">Universitas<br>
-					<input type="checkbox" value="Fakultas" placeholder="Fakultas">Fakultas<br>
-					<input type="checkbox" value="Jurusan" placeholder="Jurusan">Jurusan<br>
-					Kategori:<br>
-					<input type="checkbox" value="Kepanitiaan" placeholder="Kepanitiaan">Kepanitiaan<br>
-					<input type="checkbox" value="UKM" placeholder="UKM">UKM<br>
-					<input type="checkbox" value="BE" placeholder="BE">BE<br>
-					<input type="submit" value="Terapkan">
-				</form>
-			</div>
-			<div class="col-sm-8">
-				<form>
-					Urutkan&ensp;<input type="submit" value="Terbaru">&ensp;<input type="submit" value="Populer">&ensp;<select name="Berdasarkan" value="Berdasarkan">
-						<option value="Abjad">Abjad</option>
-						<option value="View">View</option>
-						<option value="Peminat">Peminat</option>
-					</select>
-				</form>
-				<div class="col-sm-3">
+
+			<div class="col-sm-12">
+				<div class="col-sm-3" style="background: #008080; color: white">
+					<form>
+						<input type="text" name="" placeholder="Masukkan sesuatu">
+						<select name="kategori">
+							<option value="Kepanitiaan">Kepanitiaan</option> <br>
+							<option value="UKM">UKM</option>
+							<option value="BE">BE</option>					
+						</select></br>
+						<select name="lingkup">
+							<option value="Universitas">Universitas</option>
+							<option value="Fakultas">Fakultas</option>
+							<option value="Jurusan">Jurusan</option>					
+						</select></br>
+						<input type="button" value="Cari">
+					</form>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-9">
+					<div class="col-sm-3">
+						<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
+					</div>
+					<div class="col-sm-3">
+						<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
+					</div>
+					<div class="col-sm-3">
+						<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
+					</div>
 				</div>
-				<div class="col-sm-3">
-				</div>
-			</div>
+			</div>			
+		</div>
+
 <!--FOOTER-->
 		<div class="row" style="background: #008080; color: white">
 			<div class="col-sm-4"><u>Tentang Kami</u>
@@ -112,6 +115,7 @@
 			</div>
 		</div>
 	</div>
+
 
 </body>
 </html> 
