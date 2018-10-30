@@ -1,5 +1,5 @@
-<form>
-	<input type="text" name="" placeholder="Masukkan sesuatu">
+<form >
+	<input type="text" name="pencarian" placeholder="Masukkan sesuatu" >
 	<select name="kategori">
 		<option value="Kepanitiaan">Kepanitiaan</option> <br>
 		<option value="UKM">UKM</option>

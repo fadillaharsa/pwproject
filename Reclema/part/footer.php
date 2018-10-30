@@ -1,23 +1,23 @@
 <div class="container-fluid">
-	<div class="row" style="background: #008080; color: white">
+	<div class="row" style="background: #00AFEF; color: white">
 		<div class="col-sm-4"><u>Tentang Kami</u>
 			<img src="">
 			<h1>RECLEMA</h1>
 		</div>
 		<div class="col-sm-4">
-			<u>Link</u>
+			<h4>TAUTAN META</h4>
 			<ul>
 				<li><a href="https://paus.unpad.ac.id/">Universitas Padjadjaran</a></li>
-				<li><a href="https://www.fadillaharsa.id/">Fadillah Arsa</a></li>
 				<li><a href="http://himatif.fmipa.unpad.ac.id/">Himatif FMIPA Unpad</a></li>	
 			</ul>
 		</div>
-		<div class="col-sm-4"><u>Hubungi Kami</u>
+		<div class="col-sm-4">
+			<h4>LAINNYA</h4>
 			<ul>
 				<li><a href="https://www.google.com">Bantuan</a></li>
-				<li><a href="https://www.google.co.id"></a>Profil kami</li>
-				<li><a href="https://www.facebook.com">Facebook</a></li>
-				<li><a href="https://www.instagram.com">Instagram</a></li>
+				<li><a href="https://www.google.co.id">Ketentuan Penggunaan</a></li>
+				<li><a href="https://www.facebook.com">Kebijakan Privasi</a></li>
+				<li><a href="https://www.instagram.com">Tentang Kami</a></li>
 				<li><a href="https://github.com/fadillaharsa">Github</a></li>
 				<li><a href="https://www.fadillaharsa.id">Website</a></li>
 			</ul>

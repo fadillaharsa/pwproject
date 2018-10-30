@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="container-fluid" style="background: #00AFEF; color: white; ; border-bottom: 1px solid #A9A9A9">
 	<div class="bentuk">
-		<form>
-			<input type="text" name="" placeholder="Masukkan sesuatu">
+		<form style="padding-top: 10px; padding-bottom: 10px">
+			<input type="text" name="pencarian" placeholder="Cari rekrutmen">
 			<select name="kategori">
 				<option value="Kepanitiaan">Kepanitiaan</option>
 				<option value="UKM">UKM</option>
