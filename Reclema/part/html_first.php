@@ -6,6 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<style>
+		.rcorners1 {
+    		border-radius: 8px;
+    		padding: auto; 
+    		width: 30%;
+    		height: auto;
+		}
+		.tombol1 {
+		  display: inline-block;
+		  text-align: center;
+		  vertical-align: middle;
+		  padding: auto;
+		  border-radius: 8px;
+		  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+		  color: black;
+		  background-color: skyblue;
+		  border-color: skyblue;
+		}
 		.tombol {
 		  display: inline-block;
 		  text-align: center;
