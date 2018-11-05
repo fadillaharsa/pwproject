@@ -5,7 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<style>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+		<style>
+		html{
+			scroll-behavior: smooth;
+		}
 		.rcorners1 {
     		border-radius: 8px;
     		padding: auto; 
@@ -52,7 +56,21 @@
 		
 		.bentuk{
 			align-content: space-around;
-		}	
+		}
+		.gotopbtn{
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			background: #007bff;
+			bottom: 40px;
+			right: 50px;
+
+			text-decoration: none;
+			text-align: center;
+			line-height: 50px;
+			color: white;
+			font-size: 22px; 
+		}
 	</style>
 </head>
 <body>
