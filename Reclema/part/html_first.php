@@ -12,21 +12,36 @@
 			scroll-behavior: smooth;
 		}
 		.rcorners1 {
-    		border-radius: 8px;
+    		border-radius: 3px;
     		padding: auto; 
     		width: 30%;
     		height: auto;
+			
 		}
-		.tombol1 {
-		  display: inline-block;
-		  text-align: center;
-		  vertical-align: middle;
-		  padding: auto;
-		  border-radius: 8px;
+		.rcorners2 {
+    		border-radius: 3px 2px 2px 3px;
+    		padding: auto; 
+    		width: 30%;
+    		height: auto;
+			background-color: white;
+			color: black;
+			border: 2px solid white;
+			padding: 4px 10px;
+		}
+		
+		.tombolcari {
+		  padding: 4px 15px 4px 15px;
+		  border-radius: 3px;
 		  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 		  color: black;
-		  background-color: skyblue;
-		  border-color: skyblue;
+		  background-color: white;
+		  border: 2px solid white;
+		}
+		.tombolcari:hover{
+		  text-decoration: none;
+		  color: #fff;
+		  background-color: #0069d9;
+		  border-color: #0062cc;
 		}
 		.tombol {
 		  display: inline-block;
@@ -72,6 +87,14 @@
 			color: white;
 			font-size: 22px; 
 		}
+		
+		input[type=text] {
+			background-color: white;
+			color: black;
+			border: 2px solid white;
+			padding: 4px 10px;
+		}
+		
 	</style>
 </head>
 <body>

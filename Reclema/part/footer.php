@@ -1,5 +1,5 @@
 <div class="container-fluid">
-	<div class="row" style="background: #00AFEF; color: white">
+	<div class="row" style="background: #333333ff; color: white">
 		<div class="col-sm-4"><u>Tentang Kami</u>
 			<img src="">
 			<h1>RECLEMA</h1>
