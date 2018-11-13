@@ -7,8 +7,8 @@
 			<p style="margin-top:15px; margin-bottom: 10px"><i>Rekrutmen Lembaga Mahasiswa Universitas Padjadjaran</i></p>
 		</div>
 		<div class="col-sm-3" align="right">
-			<a href="daftar.php" class="tombol" style="margin-top: 10px; margin-bottom: 10px">Daftar</a>
-			<a href="masuk.php" class="tombol" style="margin-top: 10px; margin-bottom: 10px">Masuk</a>
+			<a href="daftar.php" class="tombol tombolwarna1" style="margin-top: 10px; margin-bottom: 10px">Daftar</a>
+			<a href="masuk.php" class="tombol tombolwarna2" style="margin-top: 10px; margin-bottom: 10px">Masuk</a>
 		</div>
 	</div>
 </div>	

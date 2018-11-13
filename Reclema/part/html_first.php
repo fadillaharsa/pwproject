@@ -22,16 +22,22 @@
 	</script>
 
 		<style>
+		.bx-wrapper {
+			box-shadow: 0 0 0px
+		}
+
 		h2{
 			text-align: center;
 		}
+		
 		html{
 			scroll-behavior: smooth;
 		}
+		
 		.rcorners1 {
     		border-radius: 3px;
     		padding: auto; 
-    		width: 30%;
+    		width: 32%;
     		height: auto;
 			
 		}
@@ -52,62 +58,72 @@
 		  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 		  color: black;
 		  background-color: white;
-		  border: 2px solid white;
+		  border: 1px solid white;
 		}
+		
 		.tombolcari:hover{
 		  text-decoration: none;
 		  color: #fff;
-		  background-color: #0069d9;
-		  border-color: #0062cc;
+		  background-color: #00222bff;
+		  border-color: white;
 		}
 		.tombol {
 		  display: inline-block;
 		  text-align: center;
 		  vertical-align: middle;
-		  padding: 8px 20px 8px 20px;
+		  padding: 5px 20px 5px 20px;
+		  border: 1px solid;
 		  border-radius: 3px;
 		  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-		  color: #ffffff;
-		  background-color: #007bff;
-		  border-color: #007bff;
 		}
 		.tombol:hover{
-		  text-decoration: none;
-		   color: #fff;
-		  background-color: #0069d9;
-		  border-color: #0062cc;
+			text-decoration: none;
+			color: #fff;
+		}
+		
+		.tombolwarna1{
+			color: white;
+			background-color: #006680ff;
+			border-color: white;
+		}
+		.tombolwarna1:hover{
+			background-color: #00222bff;
+			border-color: white;
+		}
+		.tombolwarna2{
+			color: white;
+			background-color: #00aad4ff;
+			border-color: white;
+		}
+		.tombolwarna2:hover{
+			background-color: #00222bff;
+			border-color: white;
 		}
 		
 		.gambarhome{
-			width:auto;
+			width:280px;
 			height:auto;
 		}
-		.kepala{
-			text-align: right;
-			padding: 10px 5px 5px 5px;
-		}
 		
-		.bentuk{
-			align-content: space-around;
-		}
 		.gotopbtn{
 			position: fixed;
 			width: 50px;
 			height: 50px;
-			background: #007bff;
+			background: #00aad4ff;
 			bottom: 40px;
 			right: 50px;
-
 			text-decoration: none;
 			text-align: center;
 			line-height: 50px;
 			color: white;
 			font-size: 22px; 
+			border-radius:3px;
 		}
-
+		.gotopbtn:hover{
+			color:#006680ff;
+		}
 		img {
 			max-width: 100%;
-			margin: 10px;
 		}
 		
 		input[type=text] {

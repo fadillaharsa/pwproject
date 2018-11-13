@@ -3,7 +3,7 @@ include "part/html_first.php";
 include "part/header.php";
 include "part/function_header.php";
 ?>
-	
+<div class="container-fluid">	
 <!--MAIN-->
 		<div class="row">
 			<div class="col-sm-8">
@@ -42,7 +42,7 @@ include "part/function_header.php";
 				</div>
 			</div>
 		</div>	
-
+</div>
 <!--FOOTER-->
 <?php
 include "part/footer.php";

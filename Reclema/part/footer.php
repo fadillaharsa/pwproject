@@ -21,7 +21,6 @@
 				<li><a href="https://github.com/fadillaharsa">Github</a></li>
 				<li><a href="https://www.fadillaharsa.id">Website</a></li>
 			</ul>
-			
 		</div>
 	</div>
 </div>
