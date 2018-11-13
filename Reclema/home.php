@@ -5,6 +5,7 @@ include "part/function_header.php";
 ?>
 
 <!--MAIN-->
+
 		<div class="row">
 			<div class="col-sm-12">
 				<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
@@ -35,7 +36,7 @@ include "part/function_header.php";
 				<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a> 
 			</div>
 		</div>
-		<a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+	
 <!--FOOTER-->
 <?php
 include "part/footer.php";
