@@ -1,4 +1,4 @@
-<div class="container-fluid" style="background: #00AFEF; color: white; ; border-bottom: 1px solid #A9A9A9">
+<div class="container-fluid" style="background: #00aad4ff; color: white; ; border-bottom: 1px solid #A9A9A9">
 	<div class="bentuk">
 		<form style="padding-top: 10px; padding-bottom: 10px">
 			<input class="rcorners1" type="text" name="pencarian" placeholder="Cari rekrutmen">

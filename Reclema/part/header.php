@@ -1,6 +1,5 @@
-
 <div class="container-fluid">
-	<div class="row" style="background: #00BFFF; color: white">
+	<div class="row" style="background: #006680ff; color: white">
 		<div class="col-sm-2">
 			<a href="home.php"><img src="content/reclema logo.png" width="200px" style="margin-top:10px; margin-bottom: 10px"></a>
 		</div>
