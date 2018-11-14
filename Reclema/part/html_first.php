@@ -7,7 +7,24 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+	<script>
+	    $(document).ready(function(){
+	      $('.slider').bxSlider({
+	      	auto: true,
+  			pager: true,
+	      });
+	    });
+	</script>
+
 		<style>
+		h2{
+			text-align: center;
+		}
 		html{
 			scroll-behavior: smooth;
 		}
@@ -86,6 +103,11 @@
 			line-height: 50px;
 			color: white;
 			font-size: 22px; 
+		}
+
+		img {
+			max-width: 100%;
+			margin: 10px;
 		}
 		
 		input[type=text] {

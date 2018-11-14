@@ -5,6 +5,12 @@ include "part/function_header.php";
 ?>
 
 <!--MAIN-->
+		
+		<div class="slider">
+		    <div><img src="slider/img1.jpg"></div>
+		    <div><img src="slider/img2.jpg"></div>
+		    <div><img src="slider/img3.jpg"></div>
+		</div>
 
 		<div class="row">
 			<div class="col-sm-12">
