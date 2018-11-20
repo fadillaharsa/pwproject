@@ -3,13 +3,13 @@
 		<form style="padding-top: 10px; padding-bottom: 10px">
 			<input type="search" name="pencarian" placeholder="Cari rekrutmen" class="rcorners1">
 			<select type="select" name="kategori" class="rcorners2">
-				<option value="">-- Kategori</option>
+				<option value="default">-- Kategori</option>
 				<option value="Kepanitiaan">Kepanitiaan</option>
 				<option value="UKM">UKM</option>
 				<option value="BE">BE</option>					
 			</select>
 			<select type="select" name="lingkup" class="rcorners2">
-				<option value="">-- Lingkup</option>
+				<option value="default">-- Lingkup</option>
 				<option value="Universitas">Universitas</option>
 				<option value="Fakultas">Fakultas</option>
 				<option value="Jurusan">Jurusan</option>					
