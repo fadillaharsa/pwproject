@@ -6,9 +6,9 @@ include "part/function_header.php";
 
 <!--MAIN-->
 	<div class="slider">
-		<div><img src="content/img1.jpg"></div>
-		<div><img src="content/img2.jpg"></div>
-		<div><img src="content/img3.jpg"></div>
+		<div><img src="../content/img1.jpg"></div>
+		<div><img src="../content/img2.jpg"></div>
+		<div><img src="../content/img3.jpg"></div>
 	</div>
 	
 <div class="container-fluid">	
