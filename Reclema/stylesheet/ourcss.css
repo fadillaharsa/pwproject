@@ -28,7 +28,7 @@ html{
 	padding: 4.5px 40px;
 	width: 30.8%;
 	height: auto;
-	background-image: url('https://www.w3schools.com/css/searchicon.png');
+	background-image: url('../content/searchicon.png');
 	background-position: 10px;
 	background-repeat: no-repeat;
 	margin-bottom:3px;
