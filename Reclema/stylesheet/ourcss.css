@@ -363,3 +363,52 @@ ul.bxslider {
   font-size: .85em;
   padding: 10px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  background-color: #008080;
+}
+
+li a{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #00222bff;
+  color: white;
+}
+
+.sidebar {
+  float: left;
+  width: 350px;
+  height: 500px;
+  background-color: #00aad4ff;
+}
+
+.isi {
+  width: auto;
+  height: 500px;
+}
+
+.tomboledit {
+  display: inline-block;
+  background-color: #00aad4ff;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 20px 5px 20px;
+  border: 1px none;
+  border-radius: 3px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.tomboledit:hover{
+  text-decoration: none;
+  color: #fff;
+  background-color: #00222bff; 
+}
