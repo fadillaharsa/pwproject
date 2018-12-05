@@ -1,3 +1,51 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+
+
+
+
+
+
+.centercontainer {
+  display: flex;
+  justify-content: center;
+}
+
 body {
  font-family: 'Poppins', sans-serif;
  font-weight: 300;
@@ -22,6 +70,16 @@ html{
 }
 
 /* ---------------- CSS SEARCH INPUT HEADER -----------------*/
+.rcorners {
+	border-radius: 3px;
+	border: 1px solid white;
+	padding: 4.5px 40px;
+	height: auto;
+	background-position: 10px;
+	background-repeat: no-repeat;
+	margin-bottom:3px;
+}
+
 .rcorners1 {
 	border-radius: 3px;
 	border: 1px solid white;
