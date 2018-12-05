@@ -1,11 +1,15 @@
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
+/* ---------------- CSS RADIUS -----------------*/
+.radiuskanan{
+	border-radius: 0 10px 0 0;	
+}
+.radiuskiri{
+	border-radius: 10px 0 0 0;		
+}
+.roundcorners{
+	border-radius: 3px;	
 }
 
-/* Style tab links */
+/* ---------------- CSS TABS -----------------*/
 .tablink {
   background-color: #555;
   color: white;
@@ -14,33 +18,26 @@ body, html {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
+  width: 50%;
 }
 
 .tablink:hover {
   background-color: #777;
+
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
   display: none;
-  padding: 100px 20px;
+  padding-top: 50px;
   height: 100%;
+  border-radius: 10px;
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#mahasiswa {background-color: #00aad4ff;}
+#lembagakemahasiswaan {background-color: #00aad4ff;}
 
-
-
-
-
-
-
+/* ---------------- CSS UMUM -----------------*/
 .centercontainer {
   display: flex;
   justify-content: center;
