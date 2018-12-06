@@ -1,3 +1,25 @@
+.peringatan {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  width:400px;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.peringatan-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+
+.peringatan-primary hr {
+  border-top-color: #9fcdff;
+}
+
+.peringatan-primary .peringatan-link {
+  color: #002752;
+}
+
 /* ---------------- CSS RADIUS -----------------*/
 .radiuskanan{
 	border-radius: 0 10px 0 0;	
@@ -70,7 +92,7 @@ html{
 .rcorners {
 	border-radius: 3px;
 	border: 1px solid white;
-	padding: 4.5px 40px;
+	padding: 4.5px 12px;
 	height: auto;
 	background-position: 10px;
 	background-repeat: no-repeat;
