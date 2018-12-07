@@ -386,12 +386,6 @@ ul.bxslider {
   padding: 10px;
 }
 
-.sidebar {
-  float: left;
-  width: 350px;
-  height: 500px;
-  background-color: #00aad4ff;
-}
 
 .isi {
   width: auto;
@@ -413,4 +407,30 @@ ul.bxslider {
   text-decoration: none;
   color: #fff;
   background-color: #00222bff; 
+}
+
+.tabel {
+  border: 1px solid black;
+  width: 70%;
+  height: 500px;
+}
+
+.menu {
+  list-style-type; none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.menu a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #555;
+  color: white;
 }
