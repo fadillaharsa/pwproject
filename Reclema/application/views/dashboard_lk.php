@@ -15,17 +15,17 @@ include "part/function_header.php"
 		</div>
 
 		<div class="col-sm-9" style=" color: black">
-						<h1>Daftar Member</h1>
+						<h1>Daftar Kemahasiswaan</h1>
 					<table class="tabel">
 						<tr>
 							<th>No</th>
-							<th>Nama</th>
-							<th>NPM</th>
+							<th>Nama Lembaga Kemahasiswaan</th>
+							<th>Lingkup</th>
 						</tr>
 						<tr>
 							<td>1. </td>
-							<td>Johannes Lumbantoruan</td>
-							<td>140810170043</td>
+							<td>HIMATIF</td>
+							<td>Program Studi (Teknik Informatika)</td>
 						</tr>
 					</table>
 		</div>
