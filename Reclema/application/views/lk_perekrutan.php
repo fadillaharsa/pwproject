@@ -5,11 +5,11 @@ include "part/function_header.php";
 ?>
 <!--MAIN-->
 <div class="container-fluid">
-	<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
 	<div class="row">
 		<?php include "part/sidenav_lk.php"; ?>
-		<div class="col-sm-9">
-			<table class="table">
+			<div class="col-sm-9">
+				<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
+				<table class="table">
 					<tr>
 						<th>Nama Lembaga Kemahasiswaan</th>
 						<td>.</td>
@@ -62,8 +62,9 @@ include "part/function_header.php";
 						<th>Kontak</th>
 						<td>.</td>
 					</tr>
-			</table>		
-		</div>			
+			</table>
+				
+			</div>					
 	</div>
 </div>
 
