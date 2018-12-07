@@ -7,7 +7,6 @@ include "part/function_header.php";
 
 <!--MAIN-->
 <div class="container-fluid">
-	<br>
 	<div class="row">
 		<div class="col-sm-3" style="background: #008080; color: white">
 			<?php
