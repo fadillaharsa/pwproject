@@ -3,34 +3,66 @@ include "part/html_first.php";
 include "part/header.php";
 include "part/function_header.php";
 ?>
-
 <!--MAIN-->
 <div class="container-fluid">
 	<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
 	<div class="row">
-		<div class="col-sm-3" style="background: #008080; color: white">
-			<ul>
-				<li><a href="https://www.google.com">Profil Lembaga</a></li>
-				<li><a href="https://www.google.co.id">Perekrutan</li>
-				<li><a href="https://www.facebook.com">Pendaftar</a></li>
-			</ul>
-		</div>
+		<?php include "part/sidenav_lk.php"; ?>
 		<div class="col-sm-9">
-			<div class="row">
-				*Nama Lembaga Kemahasiswaan<br>
-				*Nama Kepanitiaan<br>
-				*ID/Username Lembaga Kemahasiswaan<br>
-				*ID/Username Kepanitiaan<br>
-				Password<br>
-				Email<br>
-				Fakultas<br>
-				Program Studi<br>
-				Kategori<br>
-				Lingkup<br>
-				Alamat<br>
-				Logo<br>
-				Kontak<br>
-			</div>
+			<table class="table">
+					<tr>
+						<th>Nama Lembaga Kemahasiswaan</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Nama Kepanitiaan</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Usename Lembaga Kemahasiswaan</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Username Kepanitiaan</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Password</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Email</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Fakultas</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Program Studi</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Kategori</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Lingkup</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Alamat</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Logo</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>Kontak</th>
+						<td>.</td>
+					</tr>
+			</table>		
 		</div>			
 	</div>
 </div>

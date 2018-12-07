@@ -434,3 +434,18 @@ ul.bxslider {
   background-color: #555;
   color: white;
 }
+
+.tabel {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}

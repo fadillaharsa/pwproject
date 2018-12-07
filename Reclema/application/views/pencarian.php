@@ -7,7 +7,7 @@ include "part/function_header.php";
 
 <!--MAIN-->
 <div class="container-fluid">
-	<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
+	<br>
 	<div class="row">
 		<div class="col-sm-3" style="background: #008080; color: white">
 			<?php
@@ -15,6 +15,7 @@ include "part/function_header.php";
 			?>
 		</div>
 		<div class="col-sm-9">
+			<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
 			<div class="row">
 				<div class="col-sm-3">
 					<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
