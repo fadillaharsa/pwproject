@@ -1,4 +1,4 @@
-<div class="container-fluid" style="margin-top: 10px">
+<div class="container-fluid">
 	<div class="row" style="background: #333333ff; color: white; padding-top:20px" >
 		<div class="col-sm-4">
 			<a href="../index.php/home"><img src="../content/reclema logo.png" width="200px" style="margin-bottom: 10px"></a>
