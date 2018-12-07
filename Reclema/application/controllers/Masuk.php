@@ -12,9 +12,10 @@ class Masuk extends CI_Controller{
 	}
 	public function login(){
 		$data=[];
-		
+		$data['logout_url'] = base_url('index.php/masuk/logout');
 		$data['title'] = "Sign In";
 		$data['login_action'] = base_url('index.php/masuk/process');
+		$data['login_actionLK'] = base_url('index.php/masuk/processLK');
 		$data['register_url'] = base_url('index.php/masuk/register');
 			if($this->session->userdata('user_has_login') == true ){
 			redirect('dashboard');
@@ -27,8 +28,18 @@ class Masuk extends CI_Controller{
 	public function process(){
 		$process = $this->masuk_model->login();
 		if($process ==true){
-			$this->session->set_userdata('user_username',$_POST[inputEmail]);
-			redirect('dashboard');
+			$this->session->set_userdata('user_username',$_POST[inputnpm]);
+			redirect('home');
+			} else {
+			redirect('masuk');
+			}
+	}
+	
+	public function processLK(){
+		$processLK = $this->masuk_model->loginLK();
+		if($processLK ==true){
+			$this->session->set_userdata('user_username',$_POST[inputUsernameLembaga]);
+			redirect('home');
 			} else {
 			redirect('masuk');
 			}
@@ -39,5 +50,4 @@ class Masuk extends CI_Controller{
 		$this->session->sess_destroy();
 		redirect('home');
 	}
-
 }

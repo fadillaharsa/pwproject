@@ -31,27 +31,35 @@ document.getElementById("defaultOpen").click();
 							</div>
 						<?php }?>
 						NPM:<br>
-						<input type="text" id="inputEmail" name="inputEmail" class="rcorners" size=40 placeholder="Alamat email terdaftar" <?php if($this->session->userdata('login_valid')) { echo 'value="'.$this->session->userdata('login_valid').'"';}?> required autofocus><br>
+						<input type="text" id="inputnpm" name="inputnpm" class="rcorners" size=40 placeholder="NPM terdaftar" <?php if($this->session->userdata('login_valid')) { echo 'value="'.$this->session->userdata('login_valid').'"';}?> required autofocus><br>
 						Password:<br>
 						<input type="password" id="inputPassword" name="inputPassword" class="rcorners" size=40 placeholder="Password terdaftar" required> <br>
 						<div class="checkbox">
 							<label> <input type="checkbox" value="remember-me"> Remember me </label>
 						</div><br>
 						<button class="tombol tombolwarna2" type="submit">Masuk</button>
-						
-
 					</form>
 				</div>
 			</div>
 
 			<div id="lembagakemahasiswaan" class="tabcontent">
-				<div id="form" style="padding: 10px; margin-top: 10px;margin-bottom: 10px">
-					<form style="position: static">
-						Username: <br> 								<input class="rcorners" type = text name = txtNPM size=40>		<br>
-						Password: <br> 							<input class="rcorners" type = text name = txtPassword size=40>	<br><br>
-					<input type = Masuk value= Masuk class="tombol tombolwarna2">
+				<div id="form" style="padding: 10px; margin-top: 10px;margin-bottom: 10px">	
+					<form style="position: static" action="<?php echo $login_actionLK;?>" method="post" enctype="multipart/form-data">
+						<?php if($this->session->userdata('login_message')){ ?><br>
+							<div class="peringatan peringatan-primary" role="alert">
+								<?php echo $this->session->userdata('login_message'); ?>
+							</div>
+						<?php }?>
+						Username:<br>
+						<input type="text" id="inputUsernameLembaga" name="inputUsernameLembaga" class="rcorners" size=40 placeholder="Username lembaga terdaftar" <?php if($this->session->userdata('login_valid')) { echo 'value="'.$this->session->userdata('login_valid').'"';}?> required autofocus><br>
+						Password:<br>
+						<input type="password" id="inputPasswordLembaga" name="inputPasswordLembaga" class="rcorners" size=40 placeholder="Password terdaftar" required> <br>
+						<div class="checkbox">
+							<label> <input type="checkbox" value="remember-me"> Remember me </label>
+						</div><br>
+						<button class="tombol tombolwarna2" type="submit">Masuk</button>
 					</form>
-					</div>
+				</div>
 			</div>
 		</div>
 	</div>
