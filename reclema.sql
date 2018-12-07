@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2018 at 03:11 AM
+-- Generation Time: Dec 07, 2018 at 11:46 AM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -35,6 +35,13 @@ CREATE TABLE `admin` (
   `nama_admin` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`username_admin`, `email_admin`, `password_admin`, `nama_admin`) VALUES
+('admin', 'mail@gmail.com', 'password', 'admin');
+
 -- --------------------------------------------------------
 
 --
@@ -48,6 +55,13 @@ CREATE TABLE `formulir` (
   `npm` char(20) NOT NULL,
   `posisi` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `formulir`
+--
+
+INSERT INTO `formulir` (`id_formulir`, `cv`, `id_lowongan`, `npm`, `posisi`) VALUES
+(1, 'saya hebat. percaya saya', 1, '14081017000', 'Ketua');
 
 -- --------------------------------------------------------
 
@@ -69,6 +83,13 @@ CREATE TABLE `lembaga` (
   `logo_lembaga` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `lembaga`
+--
+
+INSERT INTO `lembaga` (`username_lembaga`, `nama_lembaga`, `email_lembaga`, `password_lembaga`, `prodi_lembaga`, `fakultas_lembaga`, `lingkup_lembaga`, `alamat_lembaga`, `kategori_lembaga`, `kontak_lembaga`, `logo_lembaga`) VALUES
+('Hima', 'Himpunan Mahasiswa', 'himpunan@yahoo.com', 'password', 'Ilmu Komputer', 'MIPA', 'Prodi', 'google.com', 'Himpunan', 'ID Line: himpunaneuy', 'img2.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -86,6 +107,13 @@ CREATE TABLE `lowongan` (
   `kontak_lowongan` varchar(100) NOT NULL,
   `username_lembaga` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `lowongan`
+--
+
+INSERT INTO `lowongan` (`id_lowongan`, `nama_lowongan`, `kategori_lowongan`, `lingkup_lowongan`, `prodi_lowongan`, `fakultas_lowongan`, `deskripsi_lowongan`, `kontak_lowongan`, `username_lembaga`) VALUES
+(1, 'Perekrutan hima', 'Himpunan', 'Prodi', 'Ilmu Komputer', 'MIPA', 'Join kuy', 'ID Line: joinhimakuy', 'Hima');
 
 -- --------------------------------------------------------
 
@@ -113,6 +141,7 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`npm`, `nama_mahasiswa`, `email_mahasiswa`, `password_mahasiswa`, `no_hp_mahasiswa`, `prodi_mahasiswa`, `fakultas_mahasiswa`, `angkatan_mahasiswa`, `alamat_mahasiswa`, `foto_mahasiswa`, `kontak_mahasiswa`, `jenis_kelamin`) VALUES
+('14081017000', 'Ujang', 'ujang@gmail.com', 'ujangganteng', 2147483647, 'Teknik Lingkungan', 'Teknik', 2018, 'Jl. Sayang no.99', 'img.jpg', 'ID Line: gantengujang. Instagram: jangujang', 'L'),
 ('140810170005', 'Muhammad Fadillah Arsa', 'arsabandung@gmail.com', 'arsaganteng', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
@@ -160,13 +189,13 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT for table `formulir`
 --
 ALTER TABLE `formulir`
-  MODIFY `id_formulir` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_formulir` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `lowongan`
 --
 ALTER TABLE `lowongan`
-  MODIFY `id_lowongan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_lowongan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
@@ -177,13 +206,16 @@ ALTER TABLE `lowongan`
 --
 ALTER TABLE `formulir`
   ADD CONSTRAINT `formulir_ibfk_1` FOREIGN KEY (`npm`) REFERENCES `mahasiswa` (`npm`),
-  ADD CONSTRAINT `formulir_ibfk_2` FOREIGN KEY (`id_lowongan`) REFERENCES `lowongan` (`id_lowongan`);
+  ADD CONSTRAINT `formulir_ibfk_2` FOREIGN KEY (`id_lowongan`) REFERENCES `lowongan` (`id_lowongan`),
+  ADD CONSTRAINT `formulir_ibfk_3` FOREIGN KEY (`npm`) REFERENCES `mahasiswa` (`npm`),
+  ADD CONSTRAINT `formulir_ibfk_4` FOREIGN KEY (`id_lowongan`) REFERENCES `lowongan` (`id_lowongan`);
 
 --
 -- Constraints for table `lowongan`
 --
 ALTER TABLE `lowongan`
-  ADD CONSTRAINT `lowongan_ibfk_1` FOREIGN KEY (`username_lembaga`) REFERENCES `lembaga` (`username_lembaga`);
+  ADD CONSTRAINT `lowongan_ibfk_1` FOREIGN KEY (`username_lembaga`) REFERENCES `lembaga` (`username_lembaga`),
+  ADD CONSTRAINT `lowongan_ibfk_2` FOREIGN KEY (`username_lembaga`) REFERENCES `lembaga` (`username_lembaga`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
