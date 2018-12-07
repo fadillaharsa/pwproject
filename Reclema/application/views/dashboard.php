@@ -34,9 +34,18 @@
 <li class="nav-item">
 <a class="nav-link" href="#">Profile</a>
 </li>
+
+
+<?php if($this->session->userdata('user_has_login') == true ){?>
+<li class="nav-item">
+<a class="nav-link" href="#"><?php echo $this->session->userdata('user_username')?></a>
+</li>
+<?php } else {?>
 <li class="nav-item">
 <a class="nav-link" href="#">Help</a>
 </li>
+<?php } ?>
+
 <li class="nav-item">
 <a class="nav-link" href="<?php echo $logout_url;?>">Sign Out</a>
 </li>

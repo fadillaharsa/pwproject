@@ -12,6 +12,7 @@ class Masuk extends CI_Controller{
 	}
 	public function login(){
 		$data=[];
+		
 		$data['title'] = "Sign In";
 		$data['login_action'] = base_url('index.php/masuk/process');
 		$data['register_url'] = base_url('index.php/masuk/register');
@@ -26,6 +27,7 @@ class Masuk extends CI_Controller{
 	public function process(){
 		$process = $this->masuk_model->login();
 		if($process ==true){
+			$this->session->set_userdata('user_username',$_POST[inputEmail]);
 			redirect('dashboard');
 			} else {
 			redirect('masuk');
