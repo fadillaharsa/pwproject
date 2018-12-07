@@ -5,7 +5,7 @@ class Dashboard extends CI_Controller {
 public function __construct(){
 parent::__construct();
 $this->load->library('form_validation');
-$this->load->model('auth_model');
+$this->load->model('masuk_model');
 }
 
 public function index(){
@@ -16,7 +16,7 @@ redirect(base_url());
 $this->session->unset_userdata('login_message');
 }
 
-$data['logout_url'] = base_url('index.php/auth/logout');
+$data['logout_url'] = base_url('index.php/masuk/logout');
 $this->load->view('Dashboard', $data);
 }
 

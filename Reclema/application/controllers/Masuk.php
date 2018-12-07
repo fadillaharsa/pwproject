@@ -35,7 +35,7 @@ class Masuk extends CI_Controller{
 	public function logout(){
 		$this->session->unset_userdata('user_has_login');
 		$this->session->sess_destroy();
-		redirect(base_url());
+		redirect('home');
 	}
 
 }
