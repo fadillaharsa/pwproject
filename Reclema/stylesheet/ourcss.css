@@ -459,6 +459,7 @@ th {
   border: 1px solid #ccc
   text-align: left;
   padding: 8px;
+  width: auto;
 }
 
 
