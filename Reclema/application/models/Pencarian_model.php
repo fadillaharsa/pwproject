@@ -12,19 +12,19 @@ class Pencarian_model extends CI_Model{
 	}
 	
 	function getjrecord2($pencarian,$kategori,$lingkup){
-		$jrec=$this->db->query("select * from lowongan where kategori_lowongan='".$kategori."'")->num_rows();
+	$jrec=$this->db->query("select * from lowongan where lingkup_lowongan LIKE '%".$lingkup."%' AND kategori_lowongan LIKE '%".$kategori."%' AND nama_lowongan LIKE '%".$pencarian."%'")->num_rows();
 		return $jrec;
 	}
 	
-	function gettemanpage($p=0,$jppage=2){
+	function caridata($p=0,$jppage=2){
 		$sqlstr="select * from lowongan ";
 		$sqlstr.="limit $p, $jppage ";
 		$hslquery=$this->db->query($sqlstr);
 		return $hslquery;
 	}
 	
-	function contohfilterteman($p=0,$jppage=2,$pencarian,$kategori,$lingkup){
-		$sqlstr="select * from lowongan where kategori_lowongan='".$kategori."'";
+	function caridatakustom($p=0,$jppage=2,$pencarian,$kategori,$lingkup){
+		$sqlstr="select * from lowongan where lingkup_lowongan LIKE '%".$lingkup."%' AND kategori_lowongan LIKE '%".$kategori."%' AND nama_lowongan LIKE '%".$pencarian."%'";
 		$sqlstr.="limit $p, $jppage ";
 		$hslquery=$this->db->query($sqlstr);
 		return $hslquery;

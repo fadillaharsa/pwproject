@@ -7,10 +7,12 @@ class Pencarian extends CI_Controller{
 	}
 	
 	public function index(){
-		$this->pagepencarian();
+		$this->page();
 	}
 
 	function page($p=0){
+		$data=[];
+		$data['action_pencarian'] = base_url('index.php/pencarian/kustom');
 		$data['logout_url'] = base_url('index.php/masuk/logout');
 		$jppage=9;
 		$this->load->library('pagination');
@@ -20,24 +22,29 @@ class Pencarian extends CI_Controller{
 		$this->pagination->initialize($config); 
 
 		$data["pagination"]=$this->pagination->create_links();
-		$data["hslquery"]=$this->Pencarian_model->gettemanpage($p,$jppage);
+		$data["hslquery"]=$this->Pencarian_model->caridata($p,$jppage);
 		$data["judulapp"]="Baca Tabel Dengan Pagination ";
 		$this->load->view("pencarian",$data);
 	}
 	
-	function pagepencarian($p=0){
+	function kustom($p=0){
+		$data=[];
+		$data['action_pencarian'] = base_url('index.php/pencarian/kustom');
 		$data['logout_url'] = base_url('index.php/masuk/logout');
 		$jppage=9;
+		$pencarian=$this->input->post('pencarian');
+		$kategori=$this->input->post('kategori');
+		$lingkup=$this->input->post('lingkup');
 		$this->load->library('pagination');
 		$config['base_url'] = site_url().'/pencarian/page/';
-		$config['total_rows'] = $this->Pencarian_model->getjrecord2();
+		$config['total_rows'] = $this->Pencarian_model->getjrecord2($pencarian,$kategori,$lingkup);
 		$config['per_page'] = $jppage; 
 		$this->pagination->initialize($config); 
-
 		$data["pagination"]=$this->pagination->create_links();
-		$data["hslquery"]=$this->Pencarian_model->contohfilterteman($p,$jppage);
+		$data["hslquery"]=$this->Pencarian_model->caridatakustom($p,$jppage,$pencarian,$kategori,$lingkup);
 		$data["judulapp"]="Baca Tabel Dengan Pagination ";
 		$this->load->view("pencarian",$data);
 	}
+
 
 }
