@@ -25,19 +25,15 @@ include "part/function_header.php";
 						<td>safsdfasds da acadsdas  sadasdasdsac sada</td>
 					</tr>
 					<tr>
+						<th>Password</th>
+						<td>.</td>
+					</tr>
+					<tr>
 						<th>Email</th>
 						<td>.</td>
 					</tr>
 					<tr>
 						<th>Jenis Kelamin</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Password</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>No. HP</th>
 						<td>.</td>
 					</tr>
 					<tr>
@@ -50,6 +46,10 @@ include "part/function_header.php";
 					</tr>
 					<tr>
 						<th>Alamat</th>
+						<td>.</td>
+					</tr>
+					<tr>
+						<th>No. HP</th>
 						<td>.</td>
 					</tr>
 					<tr>

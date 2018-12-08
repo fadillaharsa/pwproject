@@ -6,56 +6,57 @@ include "part/function_header.php";
 <!--MAIN-->
 <div class="container-fluid">
 	<div class="row">
-		<?php include "part/sidenav_lk.php"; ?>
+		<?php include "part/sidenav_mahasiswa.php"; ?>
 		<div class="col-sm-9">
-			<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
+			<h2>Edit Profil</h2>
 			<table class="table">
 					<form style="position: static; border: 1px solid #ccc;"  method="post" enctype="multipart/form-data">
 					<tr>
-						<th>Logo:</th>
-						<td ><input style="border: 1px solid #ccc"  name="logo_lembaga" class="rcorners3" type = "image" value="Browse"></td>
+						<th>Foto:</th>
+						<td ><input style="border: 1px solid #ccc"  name="foto_mahasiswa" class="rcorners3" type = "image" value="Browse"></td>
 					</tr>
 					<tr>
-						<th>Nama Lembaga Kemahasiswaan/Kepanitiaan:</th>
-						<td><input style="border: 1px solid #ccc;" name="nama_lembaga" class="rcorners3" type = "text" size=40  placeholder="Nama Lembaga"></td>
+						<th>Nama:</th>
+						<td><input style="border: 1px solid #ccc;" name="nama_mahasiswa" class="rcorners3" type = "text" size=40  placeholder="Nama Mahasiswa"></td>
 					</tr>
 					<tr>
-						<th>Username:</th>
-						<td><input style="border: 1px solid #ccc;" name="username_lembaga" class="rcorners3" type = "text" size=40 placeholder="Username"></td>
+						<th>NPM:</th>
+						<td><input style="border: 1px solid #ccc;" name="npm" class="rcorners3" type = "text" size=40 placeholder="NPM"></td>
 					</tr>
 					<tr>
 						<th>Password:</th>
-						<td><input style="border: 1px solid #ccc;" name="password_lembaga" class="rcorners3" type = "password" size=40  placeholder="Password"></td>
+						<td><input style="border: 1px solid #ccc;" name="password_mahasiswa" class="rcorners3" type = "password" size=40  placeholder="Password"></td>
 					</tr>
 					<tr>
 						<th>Email:</th>
-						<td><input style="border: 1px solid #ccc;" name="email_lembaga" class="rcorners3" type = "text" size=40  placeholder="Email"></td>
+						<td><input style="border: 1px solid #ccc;" name="email_mahasiswa" class="rcorners3" type = "text" size=40  placeholder="Email"></td>
 					</tr>
 					<tr>
-						<th>Fakultas:</th>
-						<td><input style="border: 1px solid #ccc;" name="fakultas_lembaga" class="rcorners3" type = "text" size=40  placeholder="Fakultas"></td>
-					</tr>
-					<tr>
-						<th>Program Studi:</th>
-						<td><input style="border: 1px solid #ccc;" name="prodi_lembaga" class="rcorners3" type = "text" size=40  placeholder="Program Studi"></td>
-					</tr>
-					<tr>
-						<th>Kategori:</th>
-						<td>	<input name="kategori_lembaga" type ="radio" value="lembaga"> Lembaga Kemahasiswaan<br>
-								<input name="kategori_lembaga" type = "radio" value="kepanitiaan"> Kepanitiaan
+						<th>Jenis Kelamin:</th>
+						<td>	<input name="jenis_kelamin" type ="radio" value="L"> Laki-laki<br>
+								<input name="jenis_kelamin" type ="radio" value="P"> Perempuan
 						</td>
 					</tr>
 					<tr>
-						<th>Lingkup:</th>
-						<td><input style="border: 1px solid #ccc;" name="lingkup_lembaga" class="rcorners3" type = "text" size=40  placeholder="Lingkup"></td>
+						<th>Fakultas:</th>
+						<td><input style="border: 1px solid #ccc;" name="fakultas_mahasiswa" class="rcorners3" type = "text" size=40  placeholder="Fakultas"></td>
 					</tr>
+					<tr>
+						<th>Program Studi:</th>
+						<td><input style="border: 1px solid #ccc;" name="prodi_mahasiswa" class="rcorners3" type = "text" size=40  placeholder="Program Studi"></td>
+					</tr>
+					
 					<tr>
 						<th>Alamat:</th>
-						<td><input style="border: 1px solid #ccc;" name="alamat_lembaga" class="rcorners3" type = "text" size=40  placeholder="Alamat"></td>
+						<td><input style="border: 1px solid #ccc;" name="alamat_mahasiswa" class="rcorners3" type = "text" size=40  placeholder="Alamat"></td>
 					</tr>
 					<tr>
-						<th>Kontak:</th>
-						<td><input style="border: 1px solid #ccc;" name="prodi_lembaga" class="rcorners3" type = "text" size=40  placeholder="Kontak"></td>
+						<th>No. HP:</th>
+						<td><input style="border: 1px solid #ccc;" name="nohp_mahasiswa" class="rcorners3" type = "text" size=40  placeholder="No. HP"></td>
+					</tr>
+					<tr>
+						<th>Kontak Lain:</th>
+						<td><input style="border: 1px solid #ccc;" name="kontak_mahasiswa" class="rcorners3" type = "text" size=40  placeholder="Kontak Lain"></td>
 					</tr>
 
 					</form>
