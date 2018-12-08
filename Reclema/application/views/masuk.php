@@ -33,10 +33,7 @@ document.getElementById("defaultOpen").click();
 						NPM:<br>
 						<input type="text" id="inputnpm" name="inputnpm" class="rcorners" size=40 placeholder="NPM terdaftar" <?php if($this->session->userdata('login_valid')) { echo 'value="'.$this->session->userdata('login_valid').'"';}?> required autofocus><br>
 						Password:<br>
-						<input type="password" id="inputPassword" name="inputPassword" class="rcorners" size=40 placeholder="Password terdaftar" required> <br>
-						<div class="checkbox">
-							<label> <input type="checkbox" value="remember-me"> Remember me </label>
-						</div><br>
+						<input type="password" id="inputPassword" name="inputPassword" class="rcorners" size=40 placeholder="Password terdaftar" required> <br><br>
 						<button class="tombol tombolwarna2" type="submit">Masuk</button>
 					</form>
 				</div>
@@ -53,10 +50,7 @@ document.getElementById("defaultOpen").click();
 						Username:<br>
 						<input type="text" id="inputUsernameLembaga" name="inputUsernameLembaga" class="rcorners" size=40 placeholder="Username lembaga terdaftar" <?php if($this->session->userdata('login_valid')) { echo 'value="'.$this->session->userdata('login_valid').'"';}?> required autofocus><br>
 						Password:<br>
-						<input type="password" id="inputPasswordLembaga" name="inputPasswordLembaga" class="rcorners" size=40 placeholder="Password terdaftar" required> <br>
-						<div class="checkbox">
-							<label> <input type="checkbox" value="remember-me"> Remember me </label>
-						</div><br>
+						<input type="password" id="inputPasswordLembaga" name="inputPasswordLembaga" class="rcorners" size=40 placeholder="Password terdaftar" required> <br><br>
 						<button class="tombol tombolwarna2" type="submit">Masuk</button>
 					</form>
 				</div>
@@ -64,6 +58,7 @@ document.getElementById("defaultOpen").click();
 		</div>
 	</div>
 </div>
+<br>
 
 <!--FOOTER-->
 <?php

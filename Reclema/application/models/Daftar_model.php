@@ -12,4 +12,16 @@ class Daftar_model extends CI_Model
 		$this->session->set_userdata('user_has_login',true);
 		$this->session->set_userdata('user_username',$data['npm']);
     }
+	
+	public function saveLembaga()
+    {
+		$data['username_lembaga'] = $this->input->post('username_lembaga');
+		$data['kategori_lembaga'] = $this->input->post('kategori_lembaga');
+		$data['nama_lembaga'] = $this->input->post('nama_lembaga');
+		$data['email_lembaga'] = $this->input->post('email_lembaga');
+		$data['password_lembaga'] = $this->input->post('password_lembaga');
+		$this->db->insert('lembaga', $data);
+		$this->session->set_userdata('user_has_login',true);
+		$this->session->set_userdata('user_username',$data['username_lembaga']);
+    }
 }

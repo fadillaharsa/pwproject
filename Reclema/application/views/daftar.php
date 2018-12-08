@@ -26,47 +26,45 @@ document.getElementById("defaultOpen").click();
 			<button class="tablink radiuskiri" onclick="openPage('mahasiswa', this, '#008080')" id="defaultOpen">Lembaga Kemahasiswaan</button>
 			<button class="tablink radiuskanan" onclick="openPage('lembagakemahasiswaan', this, '#008080')">Mahasiswa</button>
 			<div id="mahasiswa" class="tabcontent">
-					<div id="form" style="color: white; padding: 10px; margin-top: 10px;margin-bottom: 10px">
-					<form style="position: static">					
-						Pilih:<br>									<input type = radio name = radioPilih value=l> Lembaga Kemahasiswaan
-																	<input type = radio name = radioPilih value=p> Kepanitiaan	<br><br>
-						Nama Lembaga Kemahasiswaan:<br> 			<input class="rcorners" type = text name = txtNama size=40>		<br>
-						Username:<br> 								<input class="rcorners" type = text name = txtNama size=40>		<br>
-						Email:<br>								 	<input class="rcorners" type = text name = txtEmail size=40>		<br>
-						Password:<br> 								<input class="rcorners" type = text name = txtPassword size=40>	<br>
-						Ketik Ulang Password:<br>					<input class="rcorners" type = text name = txtRePassword size=40>	<br><br>
-					<input type = Daftar value = Daftar class="tombol tombolwarna2">
+					<div id="form" style="color: white; padding: 10px; margin-top: 10px;margin-bottom: 10px">					
+					<?php
+					   echo validation_errors();
+					   if (isset($success))
+					   echo '<p>'.$success.'</p>';
+					?>
+					<form style="position: static" action="<?php echo $daftar_actionLK;?>" method="post" enctype="multipart/form-data">					
+						Kategori:<br>								<input name="kategori_lembaga" type ="radio" value="lembaga"> Lembaga Kemahasiswaan
+																	<input name="kategori_lembaga" type = "radio" value="kepanitiaan"> Kepanitiaan	<br><br>
+						Nama Lembaga Kemahasiswaan/Kepanitiaan:<br> <input name="nama_lembaga" class="rcorners" type = "text" size=40 value="<?php echo set_value('inputnamalembaga'); ?>" placeholder="Nama Lembaga">		<br>
+						Username:<br> 								<input name="username_lembaga" class="rcorners" type = "text" size=40 value="<?php echo set_value('inputusernamelembaga'); ?>" placeholder="Username">		<br>
+						Email:<br>								 	<input name="email_lembaga" class="rcorners" type = "text" size=40 value="<?php echo set_value('inputemailembaga'); ?>" placeholder="Email">		<br>
+						Password:<br> 								<input name="password_lembaga" class="rcorners" type = "password" size=40 value="<?php echo set_value('inputpasswordlembaga'); ?>" placeholder="Password">	<br><br>
+					<button class="tombol tombolwarna2" type="submit">Daftar</button>
 					</form>
 				</div>
 			</div>
 
 			<div id="lembagakemahasiswaan" class="tabcontent">
 				<div id="form" style="color: white; padding: 10px; margin-top: 10px;margin-bottom: 10px">
-						<?php
-		   echo form_open('daftar/index');
-		   echo validation_errors();
-		   if (isset($success))
-		   echo '<p>'.$success.'</p>';
-	    ?>
-				<form style="position: static">
+				<?php
+				   echo validation_errors();
+				   if (isset($success))
+				   echo '<p>'.$success.'</p>';
+				?>
+				<form style="position: static" action="<?php echo $daftar_action;?>" method="post" enctype="multipart/form-data">
 				
-					Nama Lengkap: <br> 						<input name="nama_mahasiswa" class="rcorners" type = "text" value="<?php echo set_value('inputnamamahasiswa'); ?>" placeholder="Enter First name" size=40 >		<br>
-					NPM: <br> 								<input name="npm" class="rcorners" type = "text" value="<?php echo set_value('inputnpm'); ?>" placeholder="Enter First name" size=40>		<br>
-					Email: <br>								<input name="email_mahasiswa" class="rcorners" type = "text" value="<?php echo set_value('inputemailmahasiswa'); ?>" placeholder="Enter First name" size=40>		<br>
-					Password: <br> 							<input name="password_mahasiswa" class="rcorners" type = "password" value="<?php echo set_value('inputpasswordmahasiswa'); ?>" placeholder="Enter First name" size=40>	<br><br>
-				<button class="tombol tombolwarna2" type="submit"> Submit</button>
-				
-				</form>
-				
-												<?php 
-					echo form_close(); 
-					?>
+					Nama Lengkap: <br> 						<input name="nama_mahasiswa" class="rcorners" type = "text" value="<?php echo set_value('inputnamamahasiswa'); ?>" placeholder="Nama Lengkap" size=40 >		<br>
+					NPM: <br> 								<input name="npm" class="rcorners" type = "text" value="<?php echo set_value('inputnpm'); ?>" placeholder="Nomor Pokok Mahasiswa" size=40>		<br>
+					Email: <br>								<input name="email_mahasiswa" class="rcorners" type = "text" value="<?php echo set_value('inputemailmahasiswa'); ?>" placeholder="Email" size=40>		<br>
+					Password: <br> 							<input name="password_mahasiswa" class="rcorners" type = "password" value="<?php echo set_value('inputpasswordmahasiswa'); ?>" placeholder="Password" size=40>	<br><br>
+				<button class="tombol tombolwarna2" type="submit">Daftar</button>
+				</form>	
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
+<br>
 
 
 <!--FOOTER-->
