@@ -1,6 +1,8 @@
 <div class="col-sm-3" style="background: #008080; color: white"><br>
-				<a style="font-size: 20px" href="https://www.google.com">Profil Lembaga</a><br>
-				<a style="font-size: 20px" href="https://www.google.co.id">Perekrutan</a><br>
-				<a style="font-size: 20px" href="https://www.google.co.id">Info Perekrutan</a><br>
-				<a style="font-size: 20px" href="https://www.facebook.com">Pendaftar</a><br>
+				<ul id="myMenu">
+			      <li><a href="<?php echo site_url()?>/lk_profil">Profil Lembaga</a></li>
+			      <li><a href="<?php echo site_url()?>/lk_perekrutan">Perekrutan</a></li>
+			      <li><a href="<?php echo site_url()?>/lk_info_perekrutan">Info Perekrutan</a></li>
+			      <li><a href="<?php echo site_url()?>/lk_pendaftar">Pendaftar</a></li>
+			    </ul>
 </div>

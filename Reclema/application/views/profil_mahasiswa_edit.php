@@ -13,7 +13,7 @@ include "part/function_header.php";
 					<form style="position: static; border: 1px solid #ccc;"  method="post" enctype="multipart/form-data">
 					<tr>
 						<th>Foto:</th>
-						<td ><input style="border: 1px solid #ccc"  name="foto_mahasiswa" class="rcorners3" type = "image" value="Browse"></td>
+						<td ><input style="border: 1px solid #ccc"  name="foto_mahasiswa" class="rcorners3" type = "file" value="Browse"></td>
 					</tr>
 					<tr>
 						<th>Nama:</th>
