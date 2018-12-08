@@ -11,20 +11,17 @@ include "part/function_header.php";
 			<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
 			<table class="table">
 					<tr>
-						<th>Nama Lembaga Kemahasiswaan</th>
-						<td>.</td>
+						<th>Logo</th>
+						<td><img width="100px" src="<?php echo base_url()?>/content/himatif.png"></td>
+					</tr>
+
+					<tr>
+						<th>Nama Lembaga Kemahasiswaan/Kepanitiaan</th>
+						<td>test</td>
 					</tr>
 					<tr>
-						<th>Nama Kepanitiaan</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Usename Lembaga Kemahasiswaan</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Username Kepanitiaan</th>
-						<td>.</td>
+						<th>Usename Lembaga Kemahasiswaan/Kepanitiaan</th>
+						<td>safsdfasds da acadsdas  sadasdasdsac sada</td>
 					</tr>
 					<tr>
 						<th>Password</th>
@@ -55,14 +52,11 @@ include "part/function_header.php";
 						<td>.</td>
 					</tr>
 					<tr>
-						<th>Logo</th>
-						<td>.</td>
-					</tr>
-					<tr>
 						<th>Kontak</th>
 						<td>.</td>
 					</tr>
-			</table>		
+			</table>
+			<button class="tombol tombolwarna2" type="submit">Edit</button><br><br>			
 		</div>
 			
 	</div>

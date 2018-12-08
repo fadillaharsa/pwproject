@@ -122,6 +122,16 @@ html{
 	padding: 2px 10px;
 	margin-bottom:3px;
 }
+.rcorners3 {
+  border-radius: 3px;
+  border: 1px solid white;
+  padding: 4.5px 12px;
+  height: auto;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  margin-bottom:3px;
+  width: 100%;
+}
 
 /* ---------------- CSS SUBMIT HEADER -----------------*/
 .tombolcari {
@@ -411,7 +421,6 @@ ul.bxslider {
 
 .tabel {
   border: 1px solid black;
-  width: 70%;
   height: 500px;
 }
 
@@ -437,14 +446,21 @@ ul.bxslider {
 
 .tabel {
   border-collapse: collapse;
-  width: 80%;
 }
 
-td, th {
-  border: 1px solid #dddddd;
+td {
+  border: 1px solid #ccc; 
+  text-align: left;
+  padding: 8px;
+  width: 100%;
+}
+
+th {
+  border: 1px solid #ccc
   text-align: left;
   padding: 8px;
 }
+
 
 tr:nth-child(odd) {
   background-color: #dddddd;

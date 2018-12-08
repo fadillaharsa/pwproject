@@ -62,9 +62,8 @@ include "part/function_header.php";
 						<th>Kontak</th>
 						<td>.</td>
 					</tr>
-			</table>
-				
-			</div>					
+			</table>	
+		</div>					
 	</div>
 </div>
 
