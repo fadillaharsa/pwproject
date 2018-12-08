@@ -9,60 +9,42 @@ include "part/function_header.php";
 		<?php include "part/sidenav_lk.php"; ?>
 			<div class="col-sm-9">
 				<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
-				<table class="table">
+					<table class="table">
+					<form style="position: static; border: 1px solid #ccc;"  method="post" enctype="multipart/form-data">
 					<tr>
-						<th>Nama Lembaga Kemahasiswaan</th>
-						<td>.</td>
+						<th>Nama Lowongan:</th>
+						<td><input style="border: 1px solid #ccc;" name="nama_lowongan" class="rcorners3" type ="text" size=40 placeholder="Nama Lowongan"></td>
 					</tr>
 					<tr>
-						<th>Nama Kepanitiaan</th>
-						<td>.</td>
+						<th>Kategori:</th>
+						<td>	<input name="kategori_lembaga" type ="radio" value="lembaga"> Lembaga Kemahasiswaan<br>
+								<input name="kategori_lembaga" type = "radio" value="kepanitiaan"> Kepanitiaan
+						</td>
 					</tr>
 					<tr>
-						<th>Usename Lembaga Kemahasiswaan</th>
-						<td>.</td>
+						<th>Lingkup:</th>
+						<td><input style="border: 1px solid #ccc;" name="lingkup_lowongan" class="rcorners3" type = "text" size=40  placeholder="Lingkup"></td>
 					</tr>
 					<tr>
-						<th>Username Kepanitiaan</th>
-						<td>.</td>
+						<th>Fakultas:</th>
+						<td><input style="border: 1px solid #ccc;" name="fakultas_lowongan" class="rcorners3" type = "text" size=40  placeholder="Fakultas"></td>
 					</tr>
 					<tr>
-						<th>Password</th>
-						<td>.</td>
+						<th>Program Studi:</th>
+						<td><input style="border: 1px solid #ccc;" name="prodi_lowongan" class="rcorners3" type = "text" size=40  placeholder="Program Studi"></td>
 					</tr>
 					<tr>
-						<th>Email</th>
-						<td>.</td>
+						<th>Deskripsi:</th>
+						<td><input style="border: 1px solid #ccc;" name="deskripsi_lowongan" class="rcorners3" type = "text" size=40  placeholder="Deskripsi"></td>
 					</tr>
 					<tr>
-						<th>Fakultas</th>
-						<td>.</td>
+						<th>Kontak:</th>
+						<td><input style="border: 1px solid #ccc;" name="kontak_lowongan" class="rcorners3" type = "text" size=40  placeholder="Kontak"></td>
 					</tr>
-					<tr>
-						<th>Program Studi</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Kategori</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Lingkup</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Alamat</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Logo</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Kontak</th>
-						<td>.</td>
-					</tr>
-			</table>	
+
+					</form>
+			</table>
+			<button class="tombol tombolwarna2" type="submit">Submit</button><br><br>	
 		</div>					
 	</div>
 </div>

@@ -12,26 +12,26 @@ include "part/function_header.php";
 			<table class="table">
 					<tr>
 						<th>ID Lowongan</th>
-						<td>test</td>
+						<td>Test</td>
 					</tr>
 					<tr>
 						<th>Nama Lowongan</th>
-						<td>safsdfasds da acadsdas  sadasdasdsac sada</td>
+						<td>Test</td>
 					</tr>
 					<tr>
 						<th>Kategori</th>
-						<td>.</td>
+						<td>Test</td>
 					</tr>
 					<tr>
 						<th>Lingkup</th>
+						<td>Test</td>
+					</tr>
+					<tr>
+						<th>Fakultas</th>
 						<td>.</td>
 					</tr>
 					<tr>
 						<th>Program Studi</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Fakultas</th>
 						<td>.</td>
 					</tr>
 					<tr>
