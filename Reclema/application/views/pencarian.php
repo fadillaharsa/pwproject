@@ -14,11 +14,7 @@ include "part/function_header.php";
 			?>
 		</div>
 		<div class="col-sm-9">
-			<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
-			
-			<?php 
-				echo heading($judulapp,2);
-				?>
+			<h2 align="center">Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
 				<div class="row">				
 					<?php
 					$c=1;
@@ -34,8 +30,8 @@ include "part/function_header.php";
 						echo "</tr></table><br></div>";
 					}
 					?>
-					<div class="col-sm-12 centercontainer" style="background: red">
-						<?php echo $pagination;?>
+					<div class="col-sm-12 centercontainer" style="background:#006680ff; color:white; padding:10px">
+						Halaman:&nbsp<?php echo $pagination;?>
 					</div>
 				</div>
 		</div>

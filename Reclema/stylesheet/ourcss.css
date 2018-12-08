@@ -103,7 +103,7 @@ html{
 	border-radius: 3px;
 	border: 1px solid white;
 	padding: 4.5px 40px;
-	width: 30.8%;
+
 	height: auto;
 	background-image: url('../content/searchicon.png');
 	background-position: 10px;
@@ -111,16 +111,27 @@ html{
 	margin-bottom:3px;
 }
 
+.lebarfull{
+	width: 100%;
+}
+
+.lebar1{
+	width: 30.8%;
+}
+
 /* ---------------- CSS SELECT INPUT HEADER -----------------*/
 .rcorners2 {
 	border-radius: 3px 2px 2px 3px;
-	width: 31%;
 	height: auto;
 	background-color: white;
 	color: black;
 	border: 2px solid white;
 	padding: 2px 10px;
 	margin-bottom:3px;
+}
+
+.lebar2 {
+	width: 31%;
 }
 .rcorners3 {
   border-radius: 3px;

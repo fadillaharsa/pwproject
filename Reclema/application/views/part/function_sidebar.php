@@ -1,22 +1,28 @@
-<div class="container-fluid">
-	<div class="bentuk">
-		<br>
-		<form style="padding-top: 10px; padding-bottom: 10px">
-			<input  type="text" name="pencarian" placeholder="Cari rekrutmen" style="width: 100%">
+<div class="container-fluid" >
+	<div>
+		<form style="padding-top: 10px; padding-bottom: 10px" action="<?php echo $action_pencarian;?>" method="post" enctype="multipart/form-data">
+			<br>
+			<h2 style="color:white">Filter Pencarian</h2>
+			<hr>
+			Cari rekrutmen kustom:<br>
+			<input type="search" name="pencarian" placeholder="Cari rekrutmen" class="rcorners1 lebarfull">
 			<br><br>
-			<select type="select" name="kategori" class="rcorners2" style="width: 100%">
+			Cari berdasarkan kategori:<br>
+			<select type="select" name="kategori" class="rcorners2 lebarfull">
+				<option value="">-- Kategori</option>
 				<option value="Kepanitiaan">Kepanitiaan</option>
-					<option value="UKM">UKM</option>
-					<option value="BE">BE</option>					
-				</select>
+				<option value="Lembaga">Lembaga Kemahasiswaan</option>				
+			</select>
 			<br><br>
-			<select type="select" name="lingkup" class="rcorners2" style="width: 100%">
-					<option value="Universitas">Universitas</option>
-					<option value="Fakultas">Fakultas</option>
-					<option value="Jurusan">Jurusan</option>					
-				</select>
-				<br><br>
-				<input type="button" value="Cari" class="tombolcari">
+			Cari berdasarkan lingkup:<br>
+			<select type="select" name="lingkup" class="rcorners2 lebarfull">
+				<option value="">-- Lingkup</option>
+				<option value="Universitas">Universitas</option>
+				<option value="Fakultas">Fakultas</option>
+				<option value="Jurusan">Jurusan</option>					
+			</select>
+			<br><br>
+			<input type="submit" value="Cari" class="tombolcari">
 		</form>
 	</div>
-</div>
+</div>	
