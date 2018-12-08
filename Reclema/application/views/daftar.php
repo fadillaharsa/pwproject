@@ -33,8 +33,8 @@ document.getElementById("defaultOpen").click();
 					   echo '<p>'.$success.'</p>';
 					?>
 					<form style="position: static" action="<?php echo $daftar_actionLK;?>" method="post" enctype="multipart/form-data">					
-						Kategori:<br>								<input name="kategori_lembaga" type ="radio" value="lembaga"> Lembaga Kemahasiswaan
-																	<input name="kategori_lembaga" type = "radio" value="kepanitiaan"> Kepanitiaan	<br><br>
+						Kategori:<br>								<input name="kategori_lembaga" type ="radio" value="Lembaga"> Lembaga Kemahasiswaan
+																	<input name="kategori_lembaga" type = "radio" value="Kepanitiaan"> Kepanitiaan	<br><br>
 						Nama Lembaga Kemahasiswaan/Kepanitiaan:<br> <input name="nama_lembaga" class="rcorners" type = "text" size=40 value="<?php echo set_value('inputnamalembaga'); ?>" placeholder="Nama Lembaga">		<br>
 						Username:<br> 								<input name="username_lembaga" class="rcorners" type = "text" size=40 value="<?php echo set_value('inputusernamelembaga'); ?>" placeholder="Username">		<br>
 						Email:<br>								 	<input name="email_lembaga" class="rcorners" type = "text" size=40 value="<?php echo set_value('inputemailembaga'); ?>" placeholder="Email">		<br>

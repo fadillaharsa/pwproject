@@ -15,66 +15,29 @@ include "part/function_header.php";
 		</div>
 		<div class="col-sm-9">
 			<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
-			<div class="row">
-				<div class="col-sm-3">
-					<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
-					Kategori:<br>
-					Lingkup:<br>
-					Fakultas:<br>
-					Prodi:<br>
-					<a href="https://www.google.com">Lihat Detil</a>
+			
+			<?php 
+				echo heading($judulapp,2);
+				?>
+				<div class="row">				
+					<?php
+					$c=1;
+					foreach($hslquery->result() as $row){
+						echo "<div class='col-sm-4'><tr>";
+						echo "<table style='width:100%;'><td>";
+						echo "Nama Lowongan : ".$row->nama_lowongan;
+						echo br();
+						echo "Kategori : ".$row->kategori_lowongan;
+						echo br();
+						echo "Lingkup : ".$row->lingkup_lowongan;
+						echo "</td>";
+						echo "</tr></table><br></div>";
+					}
+					?>
+					<div class="col-sm-12 centercontainer" style="background: red">
+						<?php echo $pagination;?>
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
-					Kategori:<br>
-					Lingkup:<br>
-					Fakultas:<br>
-					Prodi:<br>
-					<a href="https://www.google.com">Lihat Detil</a>
-				</div>
-				<div class="col-sm-3">
-					<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
-					Kategori:<br>
-					Lingkup:<br>
-					Fakultas:<br>
-					Prodi:<br>
-					<a href="https://www.google.com">Lihat Detil</a>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-3">
-					<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
-					Kategori:<br>
-					Lingkup:<br>
-					Fakultas:<br>
-					Prodi:<br>
-					<a href="https://www.google.com">Lihat Detil</a>
-				</div>
-				<div class="col-sm-3">
-					<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
-					Kategori:<br>
-					Lingkup:<br>
-					Fakultas:<br>
-					Prodi:<br>
-					<a href="https://www.google.com">Lihat Detil</a>
-				</div>
-				<div class="col-sm-3">
-					<a href=""><img src="http://cdn2.tstatic.net/tribunnews/foto/bank/images/kamboja-bunga_20151011_033827.jpg" class="gambarhome"></a>
-					Kategori:<br>
-					Lingkup:<br>
-					Fakultas:<br>
-					Prodi:<br>
-					<a href="https://www.google.com">Lihat Detil</a>
-				</div>
-			</div>
-				<br>
-				<a href="https://www.google.com"> 1 </a>
-				<a href="https://www.google.com"> 2 </a>
-				<a href="https://www.google.com"> 3 </a>
-				<a href="https://www.google.com"> Next </a>
-				<a href="https://www.google.com"> Last </a>
-
 		</div>
 	</div>
 </div>

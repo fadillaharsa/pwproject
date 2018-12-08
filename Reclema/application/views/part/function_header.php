@@ -1,6 +1,6 @@
 <div class="container-fluid" style="background: #00aad4ff; color: white; border-bottom: 1px solid #A9A9A9">
 	<div>
-		<form style="padding-top: 10px; padding-bottom: 10px">
+		<form style="padding-top: 10px; padding-bottom: 10px" action="<?php echo $action_pencarian;?>" method="post" enctype="multipart/form-data>
 			<input type="search" name="pencarian" placeholder="Cari rekrutmen" class="rcorners1">
 			<select type="select" name="kategori" class="rcorners2">
 				<option value="default">-- Kategori</option>
