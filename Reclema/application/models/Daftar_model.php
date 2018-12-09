@@ -11,6 +11,7 @@ class Daftar_model extends CI_Model
 		$this->db->insert('mahasiswa', $data);
 		$this->session->set_userdata('user_has_login',true);
 		$this->session->set_userdata('user_username',$data['npm']);
+		$this->session->set_userdata('user_jenis','mahasiswa');
     }
 	
 	public function saveLembaga()
@@ -23,5 +24,6 @@ class Daftar_model extends CI_Model
 		$this->db->insert('lembaga', $data);
 		$this->session->set_userdata('user_has_login',true);
 		$this->session->set_userdata('user_username',$data['username_lembaga']);
+		$this->session->set_userdata('user_jenis','lembaga');
     }
 }

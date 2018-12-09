@@ -15,7 +15,7 @@ include "part/function_header.php";
 			foreach($hslquery->result() as $row){
 					echo "<tr><th>Logo</th><td><img width='100px' src='".base_url()."/content/himatif.png'></td></tr>";
 					echo "<tr><th>Nama Lembaga Kemahasiswaan/Kepanitiaan</th><td>".$row->nama_lembaga;
-					echo "</td></tr><tr><th>Usename Lembaga Kemahasiswaan/Kepanitiaan</th><td>".$row->username_lembaga;
+					echo "</td></tr><tr><th>Username Lembaga Kemahasiswaan/Kepanitiaan</th><td>".$row->username_lembaga;
 					echo "</td></tr><tr><th>Password</th><td>".$row->password_lembaga;
 					echo "</td></tr><tr><th>Email</th><td>".$row->email_lembaga;
 					echo "</td></tr><tr><th>Fakultas</th><td>".$row->fakultas_lembaga;

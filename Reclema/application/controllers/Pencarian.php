@@ -20,7 +20,7 @@ class Pencarian extends CI_Controller{
 		$config['total_rows'] = $this->Pencarian_model->getjrecord();
 		$config['per_page'] = $jppage; 
 		$this->pagination->initialize($config); 
-
+		$data["dataketemu"]= $config['total_rows'];
 		$data["pagination"]=$this->pagination->create_links();
 		$data["hslquery"]=$this->Pencarian_model->caridata($p,$jppage);
 		$data["judulapp"]="Baca Tabel Dengan Pagination ";
@@ -39,6 +39,7 @@ class Pencarian extends CI_Controller{
 		$config['base_url'] = site_url().'/pencarian/page/';
 		$config['total_rows'] = $this->Pencarian_model->getjrecord2($pencarian,$kategori,$lingkup);
 		$config['per_page'] = $jppage; 
+		$data["dataketemu"]= $config['total_rows'];
 		$this->pagination->initialize($config); 
 		$data["pagination"]=$this->pagination->create_links();
 		$data["hslquery"]=$this->Pencarian_model->caridatakustom($p,$jppage,$pencarian,$kategori,$lingkup);

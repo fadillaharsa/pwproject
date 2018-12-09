@@ -14,7 +14,14 @@ include "part/function_header.php";
 			?>
 		</div>
 		<div class="col-sm-9">
-			<h2 align="center">Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
+			<br><h2 align="center">Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2><br>
+					<center>
+					<?php
+					if ($dataketemu==0){
+						echo "<br><br><p>Maaf, data yang dicari tidak ada di dalam database.</p><br><br>";
+					}
+					?>
+					<center/>
 				<div class="row">				
 					<?php
 					$c=1;

@@ -8,8 +8,12 @@
 		</div>
 		<div class="col-sm-3" align="right">
 		
-		<?php if($this->session->userdata('user_has_login') == true ){?>
-		<a href="<?php echo site_url()?>/dashboard" class="tombol tombolwarna1" style="margin-top: 10px; margin-bottom: 10px"><?php echo $this->session->userdata('user_username')?></a>
+		<?php if($this->session->userdata('user_has_login') == true ){
+		if ($this->session->userdata('user_jenis')== 'mahasiswa'){?>
+		<a href="<?php echo site_url()?>/profil_mahasiswa" class="tombol tombolwarna1" style="margin-top: 10px; margin-bottom: 10px"><?php echo $this->session->userdata('user_username')?></a>
+		<?php } else {?>
+		<a href="<?php echo site_url()?>/lk_profil" class="tombol tombolwarna1" style="margin-top: 10px; margin-bottom: 10px"><?php echo $this->session->userdata('user_username')?></a>
+		<?php }?>
 		<a href="<?php echo $logout_url;?>" class="tombol tombolwarna2" style="margin-top: 10px; margin-bottom: 10px">Keluar</a>
 		<?php } else {?>
 		<a href="<?php echo site_url()?>/daftar" class="tombol tombolwarna1" style="margin-top: 10px; margin-bottom: 10px">Daftar</a>
