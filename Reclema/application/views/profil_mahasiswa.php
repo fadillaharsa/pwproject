@@ -14,7 +14,7 @@ include "part/function_header.php";
 				<?php 
 					echo "<tr><th>Foto</th><td>";
 
-					<img width="100px" src="<?php echo base_url()?>/content/Foto.jpg"></td>
+					<img width="100px" src="<?php echo base_url()?>.../content/Foto.jpg"></td>
 
 					echo "</tr><tr><th>Nama</th><td>";
 					
