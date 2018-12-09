@@ -8,7 +8,7 @@ include "part/function_header.php";
 	<div class="row">
 		<?php include "part/sidenav_mahasiswa.php"; ?>
 		<div class="col-sm-9">
-			<h2>Edit Profil</h2>
+			<br><h2>Edit Profil</h2><br>
 			<table class="table">
 					<form style="position: static; border: 1px solid #ccc;"  method="post" enctype="multipart/form-data">
 					<tr>

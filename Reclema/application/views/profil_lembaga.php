@@ -9,7 +9,7 @@ include "part/function_header.php";
 	<div class="row">
 		<?php include "part/sidenav_mahasiswa.php"; ?>
 		<div class="col-sm-9">
-			<h1>Lembaga Kemahasiswaan yang saya daftar</h1>	
+			<br><h2>Rekrutmen Lembaga Kemahasiswaan/Kepanitiaan yang Diikuti</h2><br>
 			<table border="1px solid black" width="auto">
 				<tr>
 					<th>No</th>

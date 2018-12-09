@@ -15,6 +15,8 @@
 		$dataku=[];
 		$dataku['daftar_action'] = base_url('index.php/daftar/process');
 		$dataku['daftar_actionLK'] = base_url('index.php/daftar/processLK');
+		$dataku['action_pencarian'] = base_url('index.php/pencarian/kustom');
+		$dataku['logout_url'] = base_url('index.php/masuk/logout');
 		if($this->session->userdata('user_has_login') == true ){
 			redirect('dashboard');
 			} else {

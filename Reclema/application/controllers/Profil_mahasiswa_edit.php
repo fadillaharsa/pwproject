@@ -1,6 +1,17 @@
 <?php
 class Profil_mahasiswa_edit extends CI_Controller {
-	function index() {
-		$this->load->view("Profil_mahasiswa_edit");
+	function __construct(){
+		parent::__construct();
+		$this->load->helper(array("html","form","url","text"));
+		$this->load->model("Profil_mahasiswa_model");
+	}
+	public function index(){
+		$this->page();
+	}
+	function page(){
+		$data=[];
+		$data['action_pencarian'] = base_url('index.php/pencarian/kustom');
+		$data['logout_url'] = base_url('index.php/masuk/logout');
+		$this->load->view("profil_mahasiswa_edit",$data);
 	}
 }
