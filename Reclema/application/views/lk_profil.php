@@ -8,7 +8,7 @@ include "part/function_header.php";
 	<div class="row">
 		<?php include "part/sidenav_lk.php"; ?>
 		<div class="col-sm-9">
-			<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
+			<br><h2>Profil Lembaga Kemahasiswaan/Kepanitiaan</h2><br>
 			<table class="table">
 			<?php
 			$c=1;
@@ -27,7 +27,7 @@ include "part/function_header.php";
 					echo "</td></tr>";
 			}?>
 			</table>
-			<button class="tombol tombolwarna2" type="submit">Edit</button><br><br>			
+			<a class="tombol tombolwarna2" href="<?php echo site_url()?>/lk_profil_edit">Edit</a><br><br>
 		</div>
 			
 	</div>

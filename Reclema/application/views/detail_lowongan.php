@@ -50,7 +50,7 @@ include "part/function_header.php";
 					</tr>
 					<tr>
 						<th>Posisi yang diinginkan</th>
-						<td><input style="border: 1px solid #ccc;" name="posisi_pendaftar" class="rcorners3" type ="text" size=40  placeholder="Posisi"></td>
+						<td><input style="border: 1px solid #ccc;" name="posisi_pendaftar" class="rcorners3" type ="text"   placeholder="Posisi"></td>
 					</tr>
 					<tr>
 						<th>Upload CV</th>

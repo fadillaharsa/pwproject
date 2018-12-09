@@ -18,7 +18,7 @@
 		$dataku['action_pencarian'] = base_url('index.php/pencarian/kustom');
 		$dataku['logout_url'] = base_url('index.php/masuk/logout');
 		if($this->session->userdata('user_has_login') == true ){
-			redirect('dashboard');
+			redirect('home');
 			} else {
 			$this->load->view('daftar', $dataku);
 		}
@@ -26,7 +26,7 @@
 	  
 		public function process(){
 			if($this->session->userdata('user_has_login') == true ){
-			redirect('dashboard');
+			redirect('profil_mahasiswa');
 			}
          /* Load form validation library */ 
          $this->load->library('form_validation');
@@ -37,9 +37,15 @@
 		 $this->form_validation->set_rules('email_mahasiswa', 'Email', 'required|valid_email|callback_check_mahasiswa');
 		 $this->form_validation->set_rules('password_mahasiswa', 'Password', 'required|min_length[6]|max_length[15]');
 		 
+		 
+		 $dataku=[];
+		$dataku['daftar_action'] = base_url('index.php/daftar/process');
+		$dataku['daftar_actionLK'] = base_url('index.php/daftar/processLK');
+		$dataku['action_pencarian'] = base_url('index.php/pencarian/kustom');
+		$dataku['logout_url'] = base_url('index.php/masuk/logout');
 			
          if ($this->form_validation->run() == FALSE) { 
-            $this->load->view('daftar'); 
+            $this->load->view('daftar',$dataku); 
          } 
          else { 
             $this->load->model('Daftar_model');
@@ -52,7 +58,7 @@
 	  
 	  public function processLK() {
 		if($this->session->userdata('user_has_login') == true ){
-			redirect('dashboard');
+			redirect('lk_profil');
 		}
          /* Load form validation library */ 
          $this->load->library('form_validation');
@@ -64,9 +70,16 @@
 		 $this->form_validation->set_rules('email_lembaga', 'Email', 'required|valid_email|callback_check_lembaga');
 		 $this->form_validation->set_rules('password_lembaga', 'Password', 'required|min_length[6]|max_length[15]');
 		 
+		
+		
+		$dataku=[];
+		$dataku['daftar_action'] = base_url('index.php/daftar/process');
+		$dataku['daftar_actionLK'] = base_url('index.php/daftar/processLK');
+		$dataku['action_pencarian'] = base_url('index.php/pencarian/kustom');
+		$dataku['logout_url'] = base_url('index.php/masuk/logout');
 			
          if ($this->form_validation->run() == FALSE) { 
-            $this->load->view('daftar'); 
+            $this->load->view('daftar',$dataku); 
          } 
          else { 
             $this->load->model('Daftar_model');
