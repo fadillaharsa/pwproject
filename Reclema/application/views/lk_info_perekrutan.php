@@ -15,25 +15,28 @@ include "part/function_header.php";
 						echo "<br><br><p>Maaf, Anda belum membuat perekrutan, silakan akses menu 'Perekrutan' di sidebar kiri..</p><br><br>";
 					}
 					?>
-					<center/>
+			<center/>
 			
 			<?php
 				$c=1;
 				foreach($hslquery->result() as $row){
+					echo "<h5 align='left'>Nama Perekrutan: ".$row->nama_lowongan."</h5>";
 					echo "<table class=table><tr><th>ID Lowongan</th><td>".$row->id_lowongan;
-					echo "</td></tr><tr><th>Nama Lowongan</th><td>".$row->nama_lowongan;
 					echo "</td></tr><tr><th>Kategori</th><td>".$row->kategori_lowongan;
 					echo "</td></tr><tr><th>Lingkup</th><td>".$row->lingkup_lowongan;
 					echo "</td></tr><tr><th>Fakultas</th><td>".$row->fakultas_lowongan;
 					echo "</td></tr><tr><th>Program Studi</th><td>".$row->prodi_lowongan;
 					echo "</td></tr><tr><th>Deskripsi</th><td>".$row->deskripsi_lowongan;
 					echo "</td></tr><tr><th>Kontak</th><td>".$row->kontak_lowongan;
-					echo "</td></tr></table>";
+					echo "</td></tr></table><br>";
 					}?>
-			
-			<div class="col-sm-12 centercontainer" style="background:#006680ff; color:white; padding:10px">
-				Halaman:&nbsp<?php echo $pagination;?>
-			</div>			
+				<?php
+					if ($dataketemu!=0){
+						echo"<div class='col-sm-12 centercontainer' style='background:#006680ff; color:white; padding:10px'>";
+						echo $pagination;
+						echo "</div>";
+					}
+				?>			
 		</div>
 			
 	</div>

@@ -6,33 +6,27 @@ include "part/function_header.php";
 
 <!--MAIN-->
 <div class="container-fluid">
-	<div class="row" style="width: auto; height: auto; border: 3px solid skyblue; border-radius: 3px">
-		<div class="col-md-12">
-			<h2>1. Muhammad Fadillah Arsa</h2>
-			<p><img style="border-radius: 50%; float: left" width="200px" height="300px"src="<?php base_url()?>../content/Arsa.jpg"><span style="white-space: pre;">	</span>
-			Nama<span style="white-space: pre;">	</span>: Muhammad Fadillah Arsa<br>
-			<span style="white-space: pre;">	</span>NPM<span style="white-space: pre;">	</span>: 140810170005<br>
-			<span style="white-space: pre;">	</span>Jurusan<span style="white-space: pre;">	</span>: S-1 Teknik Informatika UNPAD<br>
-			<span style="white-space: pre;">	</span>Hobby<span style="white-space: pre;">	</span>: Ngoding, Blogging</p>
+	<div class="row">
+		<div class="col-sm-4">
+			<p><img style="border-radius: 50%; float: center" width="400px" src="<?php echo base_url()?>/content/Arsa.jpg"><br>
+			Nama: Muhammad Fadillah Arsa<br>
+			NPM: 140810170005<br>
+			Jurusan: S-1 Teknik Informatika UNPAD<br>
+			Hobby: Ngoding, Blogging</p>
 		</div>
-	</div>
-	<div class="row" style="width: auto; height: auto; border: 3px solid skyblue; border-radius: 3px">		<div class="col-md-12">
-			<h2>2. Siradj Al-Fauzi</h2>
-			<p><img style="border-radius: 50%; float: left" width="200px" height="300px"src="<?php base_url()?>../content/Siradj.jpg">
-			<span style="white-space: pre;">	</span>Nama<span style="white-space: pre;">	</span>: Muhammad Siradj Al-Fauzi<br>
-			<span style="white-space: pre;">	</span>NPM<span style="white-space: pre;">	</span>: 140810170021<br>
-			<span style="white-space: pre;">	</span>Jurusan<span style="white-space: pre;">	</span>: S-1 Teknik Informatika UNPAD<br>
-			<span style="white-space: pre;">	</span>Hobby<span style="white-space: pre;">	</span>: Ngoding, Blogging</p>
+		<div class="col-sm-4">
+			<p><img style="border-radius: 50%; float: left" width="400px" src="<?php echo base_url()?>/content/Siradj.jpg"><br>
+			Nama: Muhammad Siradj Al-Fauzi<br>
+			NPM: 140810170021<br>
+			Jurusan: S-1 Teknik Informatika UNPAD<br>
+			Hobby: Ngoding, Blogging</p>
 		</div>
-	</div>
-	<div class="row" style="width: auto; height: auto; border: 3px solid skyblue; border-radius: 3px">
-		<div class="col-md-12">
-			<h2>3. Johannes Lumbantoruan</h2>
-			<p><img style="border-radius: 50%; float: left" width="200px" height="300px" src="<?php base_url()?>../content/Johannes.jpg">
-			<span style="white-space: pre;">	</span>Nama<span style="white-space: pre;">	</span>: Johannes Lumbantoruan<br>
-			<span style="white-space: pre;">	</span>NPM<span style="white-space: pre;">	</span>: 140810170043<br>
-			<span style="white-space: pre;">	</span>Jurusan<span style="white-space: pre;">	</span>: S-1 Teknik Informatika UNPAD<br>
-			<span style="white-space: pre;">	</span>Hobby<span style="white-space: pre;">	</span>: Ngoding,Main Game, Nonton Anime, Nonton Film</p>
+		<div class="col-sm-4">
+			<p><img style="border-radius: 50%; float: left" width="200px" height="300px" src="<?php echo base_url()?>/content/Johannes.jpg"><br>
+			Nama: Johannes Lumbantoruan<br>
+			NPM: 140810170043<br>
+			Jurusan: S-1 Teknik Informatika UNPAD<br>
+			Hobby: Ngoding,Main Game, Nonton Anime, Nonton Film</p>
 		</div>
 	</div>	
 </div>

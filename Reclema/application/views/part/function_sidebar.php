@@ -25,4 +25,5 @@
 			<input type="submit" value="Cari" class="tombolcari">
 		</form>
 	</div>
+	<br>
 </div>	

@@ -1,12 +1,13 @@
 <?php
-class Detail_lowongan_model extends CI_Model{
+class Home_model extends CI_Model{
 	function __construct(){
 		parent::__construct();
+
 		$this->load->database();
 	}
 	
-	function caridata($id_lowongan){
-		$sqlstr="select * from lowongan where id_lowongan='".$id_lowongan."'";
+	function caridata($jdata=2){
+		$sqlstr="select * from lowongan LIMIT ".$jdata;
 		$hslquery=$this->db->query($sqlstr);
 		return $hslquery;
 	}

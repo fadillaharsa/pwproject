@@ -14,7 +14,7 @@ include "part/function_header.php";
 			?>
 		</div>
 		<div class="col-sm-9">
-			<br><h2 align="center">Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2><br>
+			<br><h2 align="center">Daftar Rekrutmen Lembaga Kemahasiswaan/Kepanitiaan</h2><hr><br>
 					<center>
 					<?php
 					if ($dataketemu==0){
@@ -35,15 +35,19 @@ include "part/function_header.php";
 						echo "Lingkup : ".$row->lingkup_lowongan;
 						echo br();
 						$id_lowongan=$row->id_lowongan;
-						echo "<a href='detail_lowongan/$id_lowongan'>";
-						echo "Detail</a>";
+						echo "<br><a class='tombol tombolwarna2' href='".site_url()."/detail_lowongan?id_lowongan=".$id_lowongan."'>Detail dan Pendaftaran</a>";
 						echo "</td>";
 						echo "</tr></table><br></div>";
 					}
 					?>
-					<div class="col-sm-12 centercontainer" style="background:#006680ff; color:white; padding:10px">
-						Halaman:&nbsp<?php echo $pagination;?>
-					</div>
+					<?php
+					if ($dataketemu!=0){
+						echo"<div class='col-sm-12 centercontainer' style='background:#006680ff; color:white; padding:10px'>";
+						echo $pagination;
+						echo "</div>";
+					}
+					?>
+					
 				</div>
 		</div>
 	</div>
