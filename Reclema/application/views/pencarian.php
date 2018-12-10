@@ -33,6 +33,10 @@ include "part/function_header.php";
 						echo "Kategori : ".$row->kategori_lowongan;
 						echo br();
 						echo "Lingkup : ".$row->lingkup_lowongan;
+						echo br();
+						$id_lowongan=$row->id_lowongan;
+						echo "<a href='detail_lowongan/$id_lowongan'>";
+						echo "Detail</a>";
 						echo "</td>";
 						echo "</tr></table><br></div>";
 					}

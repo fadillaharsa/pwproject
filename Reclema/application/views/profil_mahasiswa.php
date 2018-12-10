@@ -11,53 +11,6 @@ include "part/function_header.php";
 		<div class="col-sm-9">
 			<br><h2>Profil Saya</h2><br>
 			<table class="table">
-<<<<<<< HEAD
-				<?php 
-					echo "<tr><th>Foto</th><td>";
-
-					<img width="100px" src="<?php echo base_url()?>/content/Foto.jpg>"></td>
-
-					echo "</tr><tr><th>Nama</th><td>";
-					
-					test
-
-					echo "</td></tr><tr><th>NPM</th><td>";
-
-					safsdfasds da acadsdas  sadasdasdsac sada
-
-					echo "</td></tr><tr><th>Password</th><td>";
-					
-					.
-
-					echo "</td></tr><tr><th>Email</th><td>";
-
-					.
-
-					echo "</td></tr><tr><th>Jenis Kelamin</th><td>";
-
-					.
-
-					echo "</td></tr><tr><th>Fakultas</th><td>";
-
-					.
-
-					echo "</td></tr><tr><th>Program Studi</th><td>";
-
-					.
-
-					echo "</td></tr><tr><th>Alamat</th><td>";
-
-					.
-
-					echo "</td></tr><tr><th>No. HP</th><td>";
-
-					.
-
-					echo "</td></tr><tr><th>Kontak Lain</th><td>";
-
-					.
-
-=======
 			<?php
 			$c=1;
 			foreach($hslquery->result() as $row){
@@ -73,7 +26,6 @@ include "part/function_header.php";
 					echo "</td></tr><tr><th>Alamat</th><td>".$row->alamat_mahasiswa;
 					echo "</td></tr><tr><th>No. HP</th><td>".$row->no_hp_mahasiswa;
 					echo "</td></tr><tr><th>Kontak Lain</th><td>".$row->kontak_mahasiswa;
->>>>>>> f9fcd4c708d09777d59f12cf1f6f6c74bdca4aa0
 					echo "</td></tr>";
 			}?>	
 				</table>

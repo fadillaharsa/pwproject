@@ -16,38 +16,20 @@ include "part/function_header.php";
 		<div class="col-sm-9">
 			<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
 			<table class="table">
-					<tr>
-						<th>ID Lowongan</th>
-						<td>Test</td>
-					</tr>
-					<tr>
-						<th>Nama Lowongan</th>
-						<td>Test</td>
-					</tr>
-					<tr>
-						<th>Kategori</th>
-						<td>Test</td>
-					</tr>
-					<tr>
-						<th>Lingkup</th>
-						<td>Test</td>
-					</tr>
-					<tr>
-						<th>Fakultas</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Program Studi</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Deskripsi</th>
-						<td>.</td>
-					</tr>
-					<tr>
-						<th>Kontak</th>
-						<td>.</td>
-					</tr>
+			<?php
+			$c=1;
+			foreach($hslquery->result() as $row){
+					echo "<table class=table><tr><th>ID Lowongan</th><td>".$row->id_lowongan;
+					echo "</td></tr><tr><th>Nama Lowongan</th><td>".$row->nama_lowongan;
+					echo "</td></tr><tr><th>Kategori</th><td>".$row->kategori_lowongan;
+					echo "</td></tr><tr><th>Lingkup</th><td>".$row->lingkup_lowongan;
+					echo "</td></tr><tr><th>Fakultas</th><td>".$row->fakultas_lowongan;
+					echo "</td></tr><tr><th>Program Studi</th><td>".$row->prodi_lowongan;
+					echo "</td></tr><tr><th>Deskripsi</th><td>".$row->deskripsi_lowongan;
+					echo "</td></tr><tr><th>Kontak</th><td>".$row->kontak_lowongan;
+					echo "</td></tr></table>";
+			}?>
+			<table class="table">
 					<tr>
 						<th>Posisi yang diinginkan</th>
 						<td><input style="border: 1px solid #ccc;" name="posisi_pendaftar" class="rcorners3" type ="text"   placeholder="Posisi"></td>
