@@ -19,7 +19,7 @@ include "part/function_header.php";
 	<div class="row" style="width: auto; height: auto; border: 3px solid skyblue; border-radius: 3px">		<div class="col-md-12">
 			<h2>2. Siradj Al-Fauzi</h2>
 			<p><img style="border-radius: 50%; float: left" width="200px" height="300px"src="<?php base_url()?>../content/Siradj.jpg">
-			<span style="white-space: pre;">	</span>Nama<span style="white-space: pre;">	</span>: Siradj Al-Fauzi<br>
+			<span style="white-space: pre;">	</span>Nama<span style="white-space: pre;">	</span>: Muhammad Siradj Al-Fauzi<br>
 			<span style="white-space: pre;">	</span>NPM<span style="white-space: pre;">	</span>: 140810170021<br>
 			<span style="white-space: pre;">	</span>Jurusan<span style="white-space: pre;">	</span>: S-1 Teknik Informatika UNPAD<br>
 			<span style="white-space: pre;">	</span>Hobby<span style="white-space: pre;">	</span>: Ngoding, Blogging</p>

@@ -9,7 +9,7 @@ include "part/function_header.php";
 	<div class="row">
 		<div class="col-dm-12" style="text-align: justify">
 			<h2>Ketentuan Penggunaan</h2>
-			<p>Reclema  adalah website sekaligus web yang menyajikan suatu cara untuk dapat mendaftar ke suatu lembaga kemahasiswaan dengan lebih mudah, praktis, dan menghemat waktu. Selain itu pendaftar dapat lebih dulu mengenal lembaga kemahasiswaan yang ingin didaftarkan sehingga dapat lebih matang dalam mengambil keputusan untuk mendaftar ke suatu lembaga kemahasiswaan. Dengan mengakses dan menggunakan web reclema, berarti Anda telah memahami dan menyetujui untuk terikat dan tunduk dengan semua peraturan yang berlaku di web reclema.
+			<p>Reclema  adalah website yang menyajikan suatu cara untuk dapat mendaftar ke suatu lembaga kemahasiswaan dengan lebih mudah, praktis, dan menghemat waktu. Selain itu pendaftar dapat lebih dulu mengenal lembaga kemahasiswaan yang ingin didaftarkan sehingga dapat lebih matang dalam mengambil keputusan untuk mendaftar ke suatu lembaga kemahasiswaan. Dengan mengakses dan menggunakan web reclema, berarti Anda telah memahami dan menyetujui untuk terikat dan tunduk dengan semua peraturan yang berlaku di web reclema.
 <h2>Perilaku Pengguna</h2>
 Pengguna harus menjaga etika dan kesopanan saat melakukan diskusi agar suasana diskusi menjadi kondusif dan nyaman. Pengguna diperbolehkan berdiskusi antar pengguna pada kolom komentar selama masih sesuai dengan tema pembahasan. Setiap pelanggaran akan mendapatkan sanksi peringatan hingga penghapusan komentar.
 <h2>Penggunaan Informasi</h2>
