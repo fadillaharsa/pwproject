@@ -11,6 +11,7 @@ class Detail_lowongan extends CI_Controller {
 	function showform($data=array()) {
 		$data['action_pencarian'] = base_url('index.php/pencarian/kustom');
 		$data['logout_url'] = base_url('index.php/masuk/logout');
+		$data['actionku'] = base_url('index.php/detail_lowongan/uploadfile');
 		$data['error']=(isset($data['error']))?$data['error']:"";
 		$id_lowongan=$_GET['id_lowongan'];
 		$data["hslquery"]=$this->Detail_lowongan_model->caridata($id_lowongan);
@@ -21,6 +22,7 @@ class Detail_lowongan extends CI_Controller {
 		$data=[];
 		$data['action_pencarian'] = base_url('index.php/pencarian/kustom');
 		$data['logout_url'] = base_url('index.php/masuk/logout');
+		$data['actionku'] = base_url('index.php/detail_lowongan/uploadfile');
 		$id_lowongan=$_GET['id_lowongan'];
 		$data["hslquery"]=$this->Detail_lowongan_model->caridata($id_lowongan);
 		$config['upload_path']          = './upload/cv/';

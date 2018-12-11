@@ -8,7 +8,7 @@ include "part/function_header.php";
 	<div class="row">
 		<?php include "part/sidenav_lk.php"; ?>
 		<div class="col-sm-9">
-			<br><h2>Profil Lembaga Kemahasiswaan/Kepanitiaan</h2><br>
+			<br><h2 class='judul'>Profil Lembaga Kemahasiswaan/Kepanitiaan</h2><br>
 			<table class="table">
 			<?php
 			$c=1;

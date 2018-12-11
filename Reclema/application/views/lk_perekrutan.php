@@ -8,7 +8,7 @@ include "part/function_header.php";
 	<div class="row">
 		<?php include "part/sidenav_lk.php"; ?>
 			<div class="col-sm-9">
-				<br><h2>Publikasi Perekrutan</h2><br>
+				<br><h2 class='judul'>Publikasi Perekrutan</h2><br>
 				<?php
 					
 					   echo validation_errors();

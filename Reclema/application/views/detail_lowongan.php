@@ -37,14 +37,14 @@ include "part/function_header.php";
 				$id_lowongan=$_GET['id_lowongan'];
 			echo"
 			<p class='pemberitahuan'>*Pastikan bahwa Anda telah melengkapi data diri sebelum mendaftar untuk mempermudah lembaga kemahasiswaan/kepanitiaan perekrut dalam mengolah data.</p> 
-			<form action = 'detail_lowongan/uploadfile?id_lowongan=".$id_lowongan."' enctype='multipart/form-data' method = 'post' accept-charset='utf-8'>
+			<form action = '".$actionku."?id_lowongan=".$id_lowongan."' enctype='multipart/form-data' method = 'post' accept-charset='utf-8'>
 			<table class='table'>
 					<tr>
-						<th>Posisi yang diinginkan</th>
+						<th>Posisi yang diinginkan<br>*Wajib</th>
 						<td><input style='border: 1px solid #ccc;' name='posisi' class='rcorners3' type ='text'   placeholder='Posisi'></td>
 					</tr>
 					<tr>
-						<th>Upload CV</th>
+						<th>Upload CV (pdf)<br>*Wajib</th>
 						<td><input style='border: 1px solid #ccc;' name='userfile' class='rcorners3' type = 'file'></td>
 					</tr>
 			</table>

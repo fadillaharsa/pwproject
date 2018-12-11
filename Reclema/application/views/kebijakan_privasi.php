@@ -5,7 +5,6 @@ include "part/function_header.php";
 ?>
 
 <!--MAIN-->
-
 <div class="container-fluid">
 	<br><center><h2 class="judul">Kebujakan Privasi</h2></center>
 	<div class="row" style="height: 600px">
@@ -40,11 +39,10 @@ include "part/function_header.php";
 					<br><br>
 						
 				</div>	
-				</center>					
+				</center>				
 		</div>
 	</div>	
 </div>
-
 <!--FOOTER-->
 
 <?php
