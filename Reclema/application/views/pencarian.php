@@ -14,7 +14,7 @@ include "part/function_header.php";
 			?>
 		</div>
 		<div class="col-sm-9">
-			<br><h2 align="center">Daftar Rekrutmen Lembaga Kemahasiswaan/Kepanitiaan</h2><hr><br>
+			<br><h2 align="center" class='judul'>Daftar Rekrutmen Lembaga Kemahasiswaan/Kepanitiaan</h2><br>
 					<center>
 					<?php
 					if ($dataketemu==0){
@@ -41,10 +41,8 @@ include "part/function_header.php";
 					}
 					?>
 					<?php
-					if ($dataketemu!=0){
-						echo"<div class='col-sm-12 centercontainer' style='background:#006680ff; color:white; padding:10px'>";
-						echo $pagination;
-						echo "</div>";
+					if ($dataketemu!=0 && $dataketemu>9){
+						echo"<div class='col-sm-12 centercontainer' style='background:#006680ff; color:white; padding:10px'>".$pagination."</div>";
 					}
 					?>
 					

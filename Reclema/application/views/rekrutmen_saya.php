@@ -4,11 +4,12 @@ include "part/header.php";
 include "part/function_header.php";
 ?>
 
+<!--MAIN-->
 <div class="container-fluid">
 	<div class="row">
-		<?php include "part/sidenav_lk.php"; ?>
+		<?php include "part/sidenav_mahasiswa.php"; ?>
 		<div class="col-sm-9">
-			<br><h2>Daftar Recruitment Saya</h2><br>
+			<br><h2>Rekrutmen Lembaga Kemahasiswaan/Kepanitiaan yang Saya Ikuti</h2><br>
 			<center>
 					<?php
 					if ($dataketemu==0){
@@ -16,7 +17,6 @@ include "part/function_header.php";
 					}
 					?>
 			<center/>
-			
 			<?php
 				$c=1;
 				foreach($hslquery->result() as $row){
@@ -26,8 +26,8 @@ include "part/function_header.php";
 					echo "</td></tr><tr><th>Lingkup</th><td>".$row->lingkup_lowongan;
 					echo "</td></tr><tr><th>Fakultas</th><td>".$row->fakultas_lowongan;
 					echo "</td></tr><tr><th>Program Studi</th><td>".$row->prodi_lowongan;
-					echo "</td></tr><tr><th>Posisi yang diajukan</th><td>".$row->deskripsi_lowongan;
-					echo "</td></tr><tr><th>CV yang dilampirkan</th><td>".$row->kontak_lowongan;
+					echo "</td></tr><tr><th>Deskripsi</th><td>".$row->deskripsi_lowongan;
+					echo "</td></tr><tr><th>Kontak</th><td>".$row->kontak_lowongan;
 					echo "</td></tr></table><br>";
 					}?>
 				<?php
@@ -38,7 +38,6 @@ include "part/function_header.php";
 					}
 				?>			
 		</div>
-			
 	</div>
 </div>
 

@@ -14,7 +14,7 @@ include "part/function_header.php";
 <div class="container-fluid">	
 	<div class="row">
 		<div class="col-sm-12">
-			<h2 align="center">REKRUTMEN TERBARU</h2><br>
+			<h2 align="center">Rekrutmen Terbaru</h2><hr><br>
 		</div>
 		<div class="col-sm-12">
 				<div class="row">				
@@ -37,7 +37,7 @@ include "part/function_header.php";
 					?>
 				</div>
 		<br>
-		<center><a href="<?php echo site_url()?>/pencarian" class="tombol tombolwarna1">Lihat Semua Rekrutmen</a></center>
+		<center><a href="<?php echo site_url()?>/pencarian" class="tombol tombolwarna1"">Lihat Semua Rekrutmen</a></center>
 		</div>
 	</div>
 	<br>

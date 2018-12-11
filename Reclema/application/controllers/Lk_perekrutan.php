@@ -43,7 +43,7 @@
 			$username=$this->session->userdata('user_username');
             $this->load->model('Lk_perekrutan_model');
 		    $this->Lk_perekrutan_model->savePerekrutan($username);
-			redirect('lk_info_perekrutan');
+			redirect('rekrutmen_saya');
          }
 			
 		}

@@ -17,15 +17,15 @@ class Pencarian_model extends CI_Model{
 	}
 	
 	function caridata($p=0,$jppage=2){
-		$sqlstr="select * from lowongan ";
-		$sqlstr.="limit $p, $jppage ";
+		$sqlstr="select * from lowongan";
+		$sqlstr.=" ORDER BY id_lowongan DESC limit $p, $jppage ";
 		$hslquery=$this->db->query($sqlstr);
 		return $hslquery;
 	}
 	
 	function caridatakustom($p=0,$jppage=2,$pencarian,$kategori,$lingkup){
 		$sqlstr="select * from lowongan where lingkup_lowongan LIKE '%".$lingkup."%' AND kategori_lowongan LIKE '%".$kategori."%' AND nama_lowongan LIKE '%".$pencarian."%'";
-		$sqlstr.="limit $p, $jppage ";
+		$sqlstr.=" ORDER BY id_lowongan DESC limit $p, $jppage";
 		$hslquery=$this->db->query($sqlstr);
 		return $hslquery;
 	}

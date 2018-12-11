@@ -17,7 +17,7 @@ include "part/function_header.php";
 			<?php
 			$c=1;
 			foreach($hslquery->result() as $row){
-					echo "<center><br><h2>Detail Rekrutmen<br>".$row->nama_lowongan."</h2><br></center>";
+					echo "<center><br><h2 class='judul'>Detail Rekrutmen<br>".$row->nama_lowongan."</h2><br></center>";
 					echo "<table class=table>";
 					echo "</td></tr><tr><th>Kategori</th><td>".$row->kategori_lowongan;
 					echo "</td></tr><tr><th>Lingkup</th><td>".$row->lingkup_lowongan;
@@ -27,20 +27,31 @@ include "part/function_header.php";
 					echo "</td></tr><tr><th>Kontak</th><td>".$row->kontak_lowongan;
 					echo "</td></tr></table>";
 			}?>
-			<?php>
-			if (){
-			<table class="table">
+			<br><center><h2 class='judul'>Formulir Pendaftaran<br></center></h2>
+				<?php
+				   echo validation_errors();
+				   if (isset($success))
+				   echo '<p>'.$success.'</p>';
+				?>
+			<?php if($this->session->userdata('user_jenis') == 'mahasiswa' ){
+				$id_lowongan=$_GET['id_lowongan'];
+			echo"
+			<p class='pemberitahuan'>*Pastikan bahwa Anda telah melengkapi data diri sebelum mendaftar untuk mempermudah lembaga kemahasiswaan/kepanitiaan perekrut dalam mengolah data.</p> 
+			<form action = 'detail_lowongan/uploadfile?id_lowongan=".$id_lowongan."' enctype='multipart/form-data' method = 'post' accept-charset='utf-8'>
+			<table class='table'>
 					<tr>
 						<th>Posisi yang diinginkan</th>
-						<td><input style='border: 1px solid #ccc;' name='posisi_pendaftar' class='rcorners3' type ='text'   placeholder='Posisi'></td>
+						<td><input style='border: 1px solid #ccc;' name='posisi' class='rcorners3' type ='text'   placeholder='Posisi'></td>
 					</tr>
 					<tr>
 						<th>Upload CV</th>
-						<td><input style='border: 1px solid #ccc;' name='cv_pendaftar' class='rcorners3' type = 'file'></td>
+						<td><input style='border: 1px solid #ccc;' name='userfile' class='rcorners3' type = 'file'></td>
 					</tr>
 			</table>
-			<p>*Pastikan data diri anda sudah terisi di profil anda sebelum mendaftar.</p>
-			<button class="tombol tombolwarna2" type="submit">Daftar</button><br><br>	
+			<button class='tombol tombolwarna2' type='submit'>Daftar</button><br><br></form>";
+
+			}else{
+				echo "<div class='pemberitahuan'><br><center>FORMULIR TIDAK DAPAT DITAMPILKAN<br>Maaf, Anda harus 'Masuk' atau 'Daftar' sebagai 'Mahasiswa' terlebih dahulu untuk mendaftar rekrutmen. </center><br></div>";
 			}?>
 		</div>
 	</div>

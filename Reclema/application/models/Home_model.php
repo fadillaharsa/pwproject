@@ -7,7 +7,7 @@ class Home_model extends CI_Model{
 	}
 	
 	function caridata($jdata=2){
-		$sqlstr="select * from lowongan LIMIT ".$jdata;
+		$sqlstr="select * from lowongan ORDER BY id_lowongan DESC LIMIT ".$jdata;
 		$hslquery=$this->db->query($sqlstr);
 		return $hslquery;
 	}
