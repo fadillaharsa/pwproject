@@ -9,12 +9,14 @@ include "part/function_header.php";
 	<div class="row">
 		<?php include "part/sidenav_mahasiswa.php"; ?>
 		<div class="col-sm-9">
-			<br><h2>Profil Saya</h2><br>
+			<br><h2 class='judul'>Profil Saya</h2><br>
 			<table class="table">
 			<?php
 			$c=1;
 			foreach($hslquery->result() as $row){
-					echo "<tr><th>Foto</th><td><img width='100px' src='".base_url()."/content/Foto.jpg'></td>";
+					echo "<tr><th>Foto</th><td><img width='100px' src='".base_url()."upload/fotomahasiswa/";
+					if($row->foto_mahasiswa!=null || $row->foto_mahasiswa!=''){echo $row->foto_mahasiswa;}else{echo 'default.png';};
+					echo "'></td>";
 					echo "</tr><tr><th>Nama</th><td>".$row->nama_mahasiswa;
 					echo "</td></tr><tr><th>NPM</th><td>".$row->npm;
 					echo "</td></tr><tr><th>Password</th><td>".$row->password_mahasiswa;
