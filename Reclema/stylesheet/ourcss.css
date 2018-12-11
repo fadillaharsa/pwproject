@@ -622,3 +622,10 @@ tr:nth-child(odd) {
   font-size: 0.875rem;
   line-height: 1.5;
 }
+
+.card {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
