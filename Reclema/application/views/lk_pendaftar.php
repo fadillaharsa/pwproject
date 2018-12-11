@@ -9,35 +9,40 @@ include "part/function_header.php";
 	<div class="row">
 		<?php include "part/sidenav_lk.php"; ?>
 		<div class="col-sm-9">
-			<h2>Pendaftar</h2>	
-			<table border="1px solid black" width="100%">
+			<br><h2 class='judul'>Pendaftar</h2><br>	
+			<center>
+					<?php
+					if ($dataketemu==0){
+						echo "<br><br><p>Maaf, belum ada yang mendaftar pada perekrutan Anda, silakan promosikan perekrutan untuk mendapatkan pendaftar.</p><br><br>";
+					}
+					?>
+			<center/>
+			<table border='1px solid black' width='100%'>
 				<tr>
 					<th>No</th>
-					<th>Nama</th>
+					<th>Rekrutmen</th>
 					<th>NPM</th>
 					<th>Email</th>
 					<th>No. HP</th>
-					<th>Kontak Lain</th>
+					<th>Posisi</th>
 					<th>CV</th>
 				</tr>
+			<?php
+				$c=1;
+				$a=1;
+				foreach($hslquery->result() as $row){
+					echo"
 				<tr>
-					<td style="width: auto;">1. </td>
-					<td style="width: auto;">Test</td>
-					<td style="width: auto;">14081017000</td>
-					<td style="width: auto;">mail@gmail.com</td>
-					<td style="width: auto;">08887888877</td>
-					<td style="width: auto;">ID Line: lineID</td>
-					<td style="width: auto;"><button class="tombol tombolwarna2" type="submit">View</button></td>
-				</tr>
-					<tr>
-					<td style="width: auto;">2. </td>
-					<td style="width: auto;">Test2</td>
-					<td style="width: auto;">14081017001</td>
-					<td style="width: auto;">mail@gmail.com</td>
-					<td style="width: auto;">08887888879</td>
-					<td style="width: auto;">ID Line: lineID</td>
-					<td style="width: auto;"><button class="tombol tombolwarna2" type="submit">View</button></td>
-				</tr>
+					<td style='width: auto;'>".$a."</td>
+					<td style='width: auto;'>".$row->nama_lowongan."</td>
+					<td style='width: auto;'>".$row->npm."</td>
+					<td style='width: auto;'>".$row->email_mahasiswa."</td>
+					<td style='width: auto;'>".$row->no_hp_mahasiswa."</td>
+					<td style='width: auto;'>".$row->posisi."</td>
+					<td style='width: auto;'><a class='tombol tombolwarna2' href='".base_url()."upload/cv/".$row->cv."'>Lihat</a></td>
+				</tr>";
+				$a=$a+1;
+				}?>
 			</table>
 		</div>
 	</div>

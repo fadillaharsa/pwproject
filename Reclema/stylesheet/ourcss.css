@@ -526,6 +526,9 @@ tr:nth-child(odd) {
 #myMenu li a:hover {
   background-color: grey;
 }
+#myMenu li a:active {
+  background-color: grey;
+}
 
 /* ---------------- CSS PAGINATION -----------------*/
 .pagination a {

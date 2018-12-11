@@ -8,7 +8,7 @@ include "part/function_header.php";
 	<div class="row">
 		<?php include "part/sidenav_lk.php"; ?>
 		<div class="col-sm-9">
-			<h2>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
+			<h2 class='judul'>Daftar Recruitment Lembaga Kemahasiswaan Kepanitiaan</h2>
 			<table class="table">
 					<form style="position: static; border: 1px solid #ccc;"  method="post" enctype="multipart/form-data">
 					<tr>

@@ -29,17 +29,16 @@ include "part/function_header.php";
 					echo "</td></tr><tr><th>Program Studi</th><td>".$row->prodi_lowongan;
 					echo "</td></tr><tr><th>Deskripsi</th><td>".$row->deskripsi_lowongan;
 					echo "</td></tr><tr><th>Kontak</th><td>".$row->kontak_lowongan;
-					echo "</td></tr><tr><th>CV</th><td>".$row->cv;
-					echo "</td></tr><tr><th>Posisi yang diajukan</th><td>".$row->posisi;
+					echo "</td></tr><tr><th>CV</th><td><a class='tombol tombolwarna2' href='".base_url()."upload/cv/".$row->cv;
+					echo "'>Lihat</a></td></tr><tr><th>Posisi yang diajukan</th><td>".$row->posisi;
 					echo "</td></tr></table>";
 					echo "<form action='".$actionHapus."' method='post' enctype='multipart/form-data'>";
 					echo "<input name='id_formulir' type ='hidden' value='".$row->id_formulir."'>";
-					echo "<button class='tombol tombolwarna2' type='submit' style='align:left'>Batal Mengikuti</button></form>";
-					
+					echo "<button class='tombol tombolwarna2' type='submit' style='float:left'>Batal Mengikuti</button></form><br><br><br>";
 					}
 					?>
 				<?php
-					if ($dataketemu!=0 && $dataketemu>9){
+					if ($dataketemu!=0 && $dataketemu>3){
 						echo"<div class='col-sm-12 centercontainer' style='background:#006680ff; color:white; padding:10px'>".$pagination."</div>";
 					}
 				?>		

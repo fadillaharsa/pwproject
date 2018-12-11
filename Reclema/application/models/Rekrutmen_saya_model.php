@@ -15,9 +15,9 @@ class Rekrutmen_saya_model extends CI_Model{
 		$hslquery=$this->db->query($sqlstr);
 		return $hslquery;
 	}
-	function hapusData(){
+	function hapusData($id_formulir){
 		$this->db->where('id_formulir', $id_formulir);
-		$this->db->update('formulir');
+		$this->db->delete('formulir');
 	}
 }
 ?>
