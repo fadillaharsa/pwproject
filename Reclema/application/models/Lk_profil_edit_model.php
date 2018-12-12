@@ -1,21 +1,20 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Profil_mahasiswa_edit_model extends CI_Model
+class Lk_profil_edit_model extends CI_Model
 {
     public function saveEdit($username,$namafile)
     {
-		$data['nama_mahasiswa'] = $this->input->post('nama_mahasiswa');
-		$data['email_mahasiswa'] = $this->input->post('email_mahasiswa');
-		$data['password_mahasiswa'] = $this->input->post('password_mahasiswa');
-		$data['no_hp_mahasiswa'] = $this->input->post('no_hp_mahasiswa');
-		$data['prodi_mahasiswa'] = $this->input->post('prodi_mahasiswa');
-		$data['fakultas_mahasiswa'] = $this->input->post('fakultas_mahasiswa');
-		$data['angkatan_mahasiswa'] = $this->input->post('angkatan_mahasiswa');
-		$data['alamat_mahasiswa'] = $this->input->post('alamat_mahasiswa');
-		$data['foto_mahasiswa'] = $namafile;
-		$data['kontak_mahasiswa'] = $this->input->post('kontak_mahasiswa');
-		$data['jenis_kelamin'] = $this->input->post('jenis_kelamin');
-		$this->db->where('npm', $username);
-		$this->db->update('mahasiswa', $data);
+		$data['nama_lembaga'] = $this->input->post('nama_lembaga');
+		$data['email_lembaga'] = $this->input->post('email_lembaga');
+		$data['password_lembaga'] = $this->input->post('password_lembaga');
+		$data['prodi_lembaga'] = $this->input->post('prodi_lembaga');
+		$data['fakultas_lembaga'] = $this->input->post('fakultas_lembaga');
+		$data['lingkup_lembaga'] = $this->input->post('lingkup_lembaga');
+		$data['alamat_lembaga'] = $this->input->post('alamat_lembaga');
+		$data['kategori_lembaga'] = $this->input->post('kategori_lembaga');
+		$data['kontak_lembaga'] = $this->input->post('kontak_lembaga');
+		$data['logo_lembaga'] = $namafile;
+		$this->db->where('username_lembaga', $username);
+		$this->db->update('lembaga', $data);
     }
 }

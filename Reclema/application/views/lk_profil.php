@@ -13,8 +13,10 @@ include "part/function_header.php";
 			<?php
 			$c=1;
 			foreach($hslquery->result() as $row){
-					echo "<tr><th>Logo</th><td><img width='100px' src='".base_url()."/content/himatif.png'></td></tr>";
-					echo "<tr><th>Nama Lembaga Kemahasiswaan/Kepanitiaan</th><td>".$row->nama_lembaga;
+					echo "<tr><th>Logo</th><td><img width='100px' src='".base_url()."upload/fotolk/";
+					if($row->logo_lembaga!=null || $row->logo_lembaga!=''){echo $row->logo_lembaga;}else{echo 'default.png';};
+					echo "'></td>";
+					echo "</tr><tr><th>Nama Lembaga Kemahasiswaan/Kepanitiaan</th><td>".$row->nama_lembaga;
 					echo "</td></tr><tr><th>Username Lembaga Kemahasiswaan/Kepanitiaan</th><td>".$row->username_lembaga;
 					echo "</td></tr><tr><th>Password</th><td>".$row->password_lembaga;
 					echo "</td></tr><tr><th>Email</th><td>".$row->email_lembaga;
