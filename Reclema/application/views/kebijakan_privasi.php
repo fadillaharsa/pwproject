@@ -6,8 +6,8 @@ include "part/function_header.php";
 
 <!--MAIN-->
 <div class="container-fluid">
-	<br><center><h2 class="judul">Kebujakan Privasi</h2></center>
-	<div class="row" style="height: 600px">
+	<br><center><h2 class="judul">Kebijakan Privasi</h2></center>
+	<div class="row">
 		<div class="col-sm-3" style="background-color: #ddd">
 				<center>
 				<div>
