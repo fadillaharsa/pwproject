@@ -6,9 +6,9 @@ include "part/function_header.php";
 
 <!--MAIN-->
 	<div class="slider">
-		<div><img src="<?php echo base_url()?>/content/img1.jpg"></div>
-		<div><img src="<?php echo base_url()?>/content/img2.jpg"></div>
-		<div><img src="<?php echo base_url()?>/content/img3.jpg"></div>
+		<div><a href="<?php echo site_url()?>detail_lowongan?id_lowongan=25"><img src="<?php echo base_url()?>/content/img1.jpg"></a></div>
+		<div><a href="<?php echo site_url()?>detail_lowongan?id_lowongan=25"><img src="<?php echo base_url()?>/content/img1.jpg" href="<?php echo site_url()?>detail_lowongan?id_lowongan=25"></a></div>
+		<div><a href="<?php echo site_url()?>detail_lowongan?id_lowongan=25"><img src="<?php echo base_url()?>/content/img1.jpg" href="<?php echo site_url()?>detail_lowongan?id_lowongan=25"></a></div>
 	</div>
 	
 <div class="container-fluid">	
